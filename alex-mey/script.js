@@ -19,11 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function isUnlocked(roundKey) {
-    return window.localStorage.getItem(getStorageKey(roundKey)) === "true";
+    return window.sessionStorage.getItem(getStorageKey(roundKey)) === "true";
   }
 
   function unlockRound(roundKey) {
-    window.localStorage.setItem(getStorageKey(roundKey), "true");
+    window.sessionStorage.setItem(getStorageKey(roundKey), "true");
   }
 
   function revealProtectedPage() {
