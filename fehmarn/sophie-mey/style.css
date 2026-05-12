@@ -99,6 +99,7 @@ main {
   width: var(--container);
   margin: 0 auto;
   padding: 0 0 5rem;
+  flex: 1;
 }
 
 .topbar {
