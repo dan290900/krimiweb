@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020c1a" />
+    <title>Moderator | Rollen-Links</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      .links-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: var(--container);
+        margin: 0 auto;
+        padding: 0 0 4rem;
+      }
+
+      .link-card {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        background: rgba(77, 184, 212, 0.05);
+        border: 1px solid rgba(180, 220, 240, 0.12);
+        border-radius: var(--radius-md);
+        padding: 1rem 1.25rem;
+      }
+
+      .link-card-avatar {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+        background: rgba(77, 184, 212, 0.08);
+      }
+
+      .link-card-info {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .link-card-name {
+        font-family: var(--display-font);
+        font-size: 1rem;
+        color: var(--text);
+        margin: 0 0 0.25rem;
+      }
+
+      .link-card-url {
+        font-size: 0.78rem;
+        color: var(--muted);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+        font-family: monospace;
+        letter-spacing: 0.01em;
+      }
+
+      .copy-btn {
+        flex-shrink: 0;
+        background: rgba(77, 184, 212, 0.1);
+        border: 1px solid rgba(180, 220, 240, 0.2);
+        color: var(--text);
+        font-family: var(--body-font);
+        font-size: 0.8rem;
+        padding: 0.45rem 1rem;
+        border-radius: 99px;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s, border-color 0.2s;
+        white-space: nowrap;
+      }
+
+      .copy-btn:hover,
+      .share-btn:hover {
+        background: rgba(77, 184, 212, 0.2);
+      }
+
+      .copy-btn.copied {
+        background: rgba(77, 184, 212, 0.18);
+        color: #a8f0c6;
+        border-color: rgba(168, 240, 198, 0.3);
+      }
+
+      .share-btn {
+        flex-shrink: 0;
+        background: rgba(77, 184, 212, 0.1);
+        border: 1px solid rgba(180, 220, 240, 0.2);
+        color: var(--text);
+        font-family: var(--body-font);
+        font-size: 0.8rem;
+        padding: 0.45rem 1rem;
+        border-radius: 99px;
+        cursor: pointer;
+        transition: background 0.2s;
+        white-space: nowrap;
+        display: none;
+      }
+
+      .mod-note {
+        width: var(--container);
+        margin: 0 auto 2rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body data-page="links">
+    <div class="page-noise" aria-hidden="true"></div>
+    <div class="page-gradient" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="https://www.darkside-games.de" target="_blank" rel="noopener">
+        <span class="brand-mark"></span>
+        <span>Darkside Games</span>
+      </a>
+    </header>
+
+    <main>
+
+      <section class="runde-hero" data-reveal>
+        <div class="runde-hero-copy" style="display: flex; flex-direction: column; gap: 1rem; padding: 4rem 0 2rem;">
+          <p class="eyebrow">Moderator-Ansicht</p>
+          <h1 style="font-family: var(--display-font); font-size: clamp(2.8rem, 6vw, 5rem); letter-spacing: -0.04em; line-height: 1.05; margin: 0;">Rollen-Links</h1>
+          <p class="runde-subtitle" style="color: var(--muted); font-size: 1rem; line-height: 1.7; margin: 0; max-width: 38rem;">Kopiere die Links und sende sie direkt an die jeweiligen Mitspieler.</p>
+        </div>
+      </section>
+
+      <p class="mod-note" data-reveal>
+        Jeder Link führt auf die persönliche Rollenseite des Mitspielers. Bitte jeden Link nur an die jeweilige Person senden.
+      </p>
+
+      <div class="links-grid">
+
+        <div class="link-card" data-reveal>
+          <img class="link-card-avatar" src="../images/peter_lehmann.png" alt="Peter Lehmann" onerror="this.style.display='none'" />
+          <div class="link-card-info">
+            <p class="link-card-name">Peter Lehmann</p>
+            <p class="link-card-url" id="url-peter"></p>
+          </div>
+          <button class="copy-btn" data-path="unterschrift/jake-winterfield-54ju21/">Kopieren</button>
+          <button class="share-btn" data-path="unterschrift/jake-winterfield-54ju21/" data-name="Jake Winterfield">&#8599; Teilen</button>
+        </div>
+
+        <div class="link-card" data-reveal>
+          <img class="link-card-avatar" src="../images/sophie_mey.png" alt="Sophie Mey" onerror="this.style.display='none'" />
+          <div class="link-card-info">
+            <p class="link-card-name">Sophie Mey</p>
+            <p class="link-card-url" id="url-sophie"></p>
+          </div>
+          <button class="copy-btn" data-path="unterschrift/Diana-Seleznev-29se09/">Kopieren</button>
+          <button class="share-btn" data-path="unterschrift/Diana-Seleznev-29se09/" data-name="Diana Seleznev">&#8599; Teilen</button>
+        </div>
+
+        <div class="link-card" data-reveal>
+          <img class="link-card-avatar" src="../images/alex_mey.png" alt="Alex Mey" onerror="this.style.display='none'" />
+          <div class="link-card-info">
+            <p class="link-card-name">Alex Mey</p>
+            <p class="link-card-url" id="url-alex"></p>
+          </div>
+          <button class="copy-btn" data-path="unterschrift/michael-silber-34i%C3%A408/">Kopieren</button>
+          <button class="share-btn" data-path="unterschrift/michael-silber-34i%C3%A408/" data-name="Michael Silber">&#8599; Teilen</button>
+        </div>
+
+        <div class="link-card" data-reveal>
+          <img class="link-card-avatar" src="../images/cloe_simons.png" alt="Cloe Simons" onerror="this.style.display='none'" />
+          <div class="link-card-info">
+            <p class="link-card-name">Cloe Simons</p>
+            <p class="link-card-url" id="url-cloe"></p>
+          </div>
+          <button class="copy-btn" data-path="unterschrift/zoe-winterfield-34%C3%B6%3Dxi/">Kopieren</button>
+          <button class="share-btn" data-path="unterschrift/zoe-winterfield-34%C3%B6%3Dxi/" data-name="Zoe Winterfield">&#8599; Teilen</button>
+        </div>
+
+        <div class="link-card" data-reveal>
+          <img class="link-card-avatar" src="../images/travis_fezur.png" alt="Travis Fezur" onerror="this.style.display='none'" />
+          <div class="link-card-info">
+            <p class="link-card-name">Travis Fezur</p>
+            <p class="link-card-url" id="url-travis"></p>
+          </div>
+          <button class="copy-btn" data-path="unterschrift/Eric-dumont-57%26%C2%A7fe/">Kopieren</button>
+          <button class="share-btn" data-path="unterschrift/Eric-dumont-57%26%C2%A7fe/" data-name="Eric Dumont">&#8599; Teilen</button>
+        </div>
+
+        <div class="link-card" data-reveal>
+          <img class="link-card-avatar" src="../images/kai_krueger.png" alt="Kai Krüger" onerror="this.style.display='none'" />
+          <div class="link-card-info">
+            <p class="link-card-name">Kai Krüger</p>
+            <p class="link-card-url" id="url-kai"></p>
+          </div>
+          <button class="copy-btn" data-path="unterschrift/diego-diaz-43ds6%26/">Kopieren</button>
+          <button class="share-btn" data-path="unterschrift/diego-diaz-43ds6%26/" data-name="Diego Diaz">&#8599; Teilen</button>
+        </div>
+
+        <div class="link-card" data-reveal>
+          <img class="link-card-avatar" src="../images/julia_petrovic.png" alt="Julia Petrovic" onerror="this.style.display='none'" />
+          <div class="link-card-info">
+            <p class="link-card-name">Julia Petrovic</p>
+            <p class="link-card-url" id="url-julia"></p>
+          </div>
+          <button class="copy-btn" data-path="unterschrift/Enisa-Pagany-93-6fg/">Kopieren</button>
+          <button class="share-btn" data-path="unterschrift/Enisa-Pagany-93-6fg/" data-name="Enisa Pagany">&#8599; Teilen</button>
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <p><a href="../../impressum/index.html"><em>@Impressum</em></a></p>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+      const base = window.location.origin + "/";
+
+      const entries = [
+        { id: "url-peter",    path: "unterschrift/jake-winterfield-54ju21/" },
+        { id: "url-sophie",   path: "unterschrift/Diana-Seleznev-29se09/" },
+        { id: "url-alex", path: "unterschrift/michael-silber-34iä08/" },
+        { id: "url-cloe",     path: "unterschrift/zoe-winterfield-34ö=xi/" },
+        { id: "url-travis",    path: "unterschrift/Eric-dumont-57&§fe/" },
+        { id: "url-kai",   path: "unterschrift/diego-diaz-43ds6&/" },
+        { id: "url-julia",   path: "unterschrift/Enisa-Pagany-93-6fg/" },
+        
+      ];
+
+      entries.forEach(({ id, path }) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = base + path;
+      });
+
+      document.querySelectorAll(".copy-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const url = base + decodeURIComponent(btn.dataset.path);
+          navigator.clipboard.writeText(url).then(() => {
+            btn.textContent = "✓ Kopiert";
+            btn.classList.add("copied");
+            setTimeout(() => {
+              btn.textContent = "Kopieren";
+              btn.classList.remove("copied");
+            }, 2000);
+          });
+        });
+      });
+
+      if (navigator.share) {
+        document.querySelectorAll(".share-btn").forEach(btn => {
+          btn.style.display = "";
+          btn.addEventListener("click", () => {
+            const url = base + decodeURIComponent(btn.dataset.path);
+            navigator.share({
+              title: btn.dataset.name + " | Darkside Games",
+              url: url,
+            });
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

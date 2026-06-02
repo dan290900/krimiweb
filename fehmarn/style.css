@@ -327,8 +327,8 @@ h3 {
 
 [data-reveal] {
   opacity: 0;
-  transform: translateY(26px);
-  transition: opacity 650ms ease, transform 650ms ease;
+  transform: translateY(16px);
+  transition: opacity 380ms ease, transform 380ms ease;
 }
 
 [data-reveal].is-visible {
