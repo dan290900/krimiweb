@@ -361,7 +361,18 @@ h3 {
 
 @media (max-width: 640px) {
   :root { --container: min(100% - 2rem, 100%); }
-  .topbar { padding-top: 0.8rem; }
+
+  .topbar {
+    padding-top: 0.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .phase-pills {
+    justify-content: flex-start;
+  }
+
   .phase-pill, .button { width: 100%; }
 }
 
