@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020c1a" />
+    <title>Peter Lehmann | Mord im Seehotel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="home" data-role="Peter Lehmann">
+    <div class="page-noise" aria-hidden="true"></div>
+    <div class="page-gradient" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span>Mord im Seehotel</span>
+      </a>
+      <div class="phase-pills" aria-label="Spielphasen">
+        <a class="phase-pill is-current" href="index.html">Start</a>
+        <a class="phase-pill" href="runde1.html" data-protected-link="runde1">Runde 1</a>
+        <a class="phase-pill" href="runde2.html" data-protected-link="runde2">Runde 2</a>
+        <a class="phase-pill" href="runde3.html" data-protected-link="runde3">Runde 3</a>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- 1. Überschrift der Rolle -->
+      <section class="nw-header" data-reveal>
+        <p class="nw-eyebrow">Rollenakte · Mord im Seehotel</p>
+        <h1 class="nw-title">Peter Lehmann</h1>
+      </section>
+
+      <!-- 2. Video -->
+      <div class="nw-video" data-reveal>
+        <p class="nw-video-label">Intro Video — Gerne am Vorabend schauen, um optimal vorbereitet zu sein</p>
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/i35hPhZmOvY?si=oLlYlwHqvL1WF1j3"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <!-- 3. Spiel starten -->
+      <div class="nw-start" data-reveal>
+        <a class="button button-primary nw-start-btn" href="runde1.html" data-protected-link="runde1">
+          Spiel starten
+        </a>
+        <p>Erst drücken, wenn der Moderator das Spiel offiziell gestartet hat.<br>Du erhältst das Passwort für jede Runde direkt vom Moderator.</p>
+      </div>
+
+      <!-- 4. Deine Rolle (Bild + Hinweise) -->
+      <section class="nw-role" data-reveal>
+        <div class="nw-role-card">
+
+          <div class="nw-role-img-wrap">
+            <div class="nw-role-img">
+              <img src="../images/peter_lehmann.png" alt="Peter Lehmann">
+              <span class="nw-placeholder-initials">P.L.</span>
+            </div>
+            <span class="nw-role-badge">Deine Rolle</span>
+          </div>
+
+          <div class="nw-role-content">
+            <h2 class="nw-role-name">Peter Lehmann</h2>
+            <p class="nw-role-subtitle">Hotelinhaber</p>
+
+            <p class="nw-role-desc">
+              Du bist seit Jahren der Steuerberater und engste Vertraute von Max Mey.
+              Du kennst die Bücher des Seehotels bis ins letzte Detail — und du weißt,
+              dass einige dieser Details nie hätten aufgeschrieben werden dürfen.
+            </p>
+            <p class="nw-role-desc">
+              Max ist tot. Der Safe in seinem Büro ist offen. Was darin lag, könnte
+              dich ruinieren. Du hast einen Manschettenknopf verloren, warst in der
+              Sauna und hattest einen Streit mit Max. Keines dieser Dinge darf in
+              dieser Reihenfolge ans Licht kommen.
+            </p>
+
+            <div class="nw-role-hints">
+              <p class="nw-hints-label">Spielhinweise</p>
+              <ul class="nw-hints-list">
+                <li>Reserviert und präzise — jedes Wort sitzt</li>
+                <li>Reagiere auf Druck mit Gegenfragen, nie mit Erklärungen</li>
+                <li>Zeige echte Trauer — sie ist dein bester Schutzschild</li>
+                <li>Lügen sind erlaubt — Widersprüche sind dein Feind</li>
+                <li>Den Streit mit Max gibst du erst in Runde 3 zu</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 5. Beziehungen -->
+      <section class="nw-relations" data-reveal>
+        <h2 class="nw-relations-title">Deine Beziehungen</h2>
+        <div class="nw-relations-wrapper">
+
+          <button class="nw-arrow nw-arrow--left" id="arrowLeft" aria-label="Zurück scrollen">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div class="nw-relations-track" id="relationsTrack">
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                  <img src="../images/max_mey.png" alt="Max Mey">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">M.M.</span>
+              </div>
+              <p class="nw-char-name">Max Mey</p>
+              <p class="nw-char-rel"> Das Oper.Er weiß, dass du mehr weißt als du sagst. Halte Abstand, vermeide offene Feindschaft.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                  <img src="../images/sophie_mey.png" alt="Sophie Mey">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">S.M.</span>
+              </div>
+              <p class="nw-char-name">Sophie Mey</p>
+              <p class="nw-char-rel">Sie trauert aufrichtig und vertraut dir noch. Dieses Vertrauen ist dein wertvollstes Kapital.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                  <img src="../images/julia_petrovic.png" alt="Julia Petrovic">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">J.P.</span>
+              </div>
+              <p class="nw-char-name">Julia Petrovic</p>
+              <p class="nw-char-rel">Ihre Ruhe wirkt einstudiert. Finde heraus, ob sie Zugang zu den Unterlagen hatte.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                 <img src="../images/travis_fezur.png" alt="Travis Fezur">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">T.F.</span>
+              </div>
+              <p class="nw-char-name">Travis Fezur</p>
+              <p class="nw-char-rel">Er weiß, dass du mehr weißt als du sagst. Halte Abstand, vermeide offene Feindschaft.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                 <img src="../images/alex_mey.png" alt="Alex Mey"> 
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">A.M.</span>
+              </div>
+              <p class="nw-char-name">Alex Mey</p>
+              <p class="nw-char-rel">Er weiß, dass du mehr weißt als du sagst. Halte Abstand, vermeide offene Feindschaft.</p>
+            </div>
+    
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                <img src="../images/kai_krueger.png" alt="Kai Krüger">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">K.K.</span>
+              </div>
+              <p class="nw-char-name">Kai Krüger</p>
+              <p class="nw-char-rel">Er weiß, dass du mehr weißt als du sagst. Halte Abstand, vermeide offene Feindschaft.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                 <img src="../images/cloe_simons.png" alt="Cloe Simons">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">C.S.</span>
+              </div>
+              <p class="nw-char-name">Cloe Simons</p>
+              <p class="nw-char-rel">Das Opfer. Euer gemeinsames Geheimnis ist mit ihm gestorben — oder doch nicht?</p>
+            </div>
+
+          </div>
+
+          <button class="nw-arrow nw-arrow--right" id="arrowRight" aria-label="Weiter scrollen">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+        </div>
+        <p class="nw-scroll-hint">← Seitwärts wischen →</p>
+      </section>
+
+      <!-- 6. Spielinformationen -->
+      <section class="nw-gameinfo" data-reveal>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Kleidungsstil</p>
+          <p class="ph-info-text">
+            Konservativ und gepflegt — ein dunkler Anzug, gerne mit Krawatte.
+            Du bist jemand, der Seriosität durch Äußerlichkeiten signalisiert.
+            Nichts Auffälliges. Nichts, das ablenkt.
+          </p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Wie du deine Rolle am besten spielst</p>
+          <p class="ph-info-text">
+            Sprich langsam und wähle deine Worte mit Bedacht. Vermeide direkte Antworten,
+            wo immer es geht. Reagiere auf Druck nicht mit Hektik, sondern mit einer
+            Gegenfrage oder einem kontrollierten Schweigen. Du bist der ruhigste
+            Mensch im Raum — auch wenn du das innerlich nicht bist.
+          </p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Deine Ziele des Abends</p>
+          <p class="ph-info-text">
+            <b>1. Geheimhaltung:</b> Die Finanzunterlagen aus dem Safe dürfen niemanden
+            erreichen. Finde heraus, was nach Max' Tod damit passiert ist — und wer
+            möglicherweise bereits Zugang hatte.
+          </p>
+          <p class="ph-info-text">
+            <b>2. Ablenkung:</b> Lenke den Verdacht auf andere. Julia Petrovic und
+            Alex Mey haben beide Motive — nutze das geschickt, ohne es zu offensichtlich
+            zu machen.
+          </p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Spielregeln</p>
+          <div class="ph-info-rules">
+            <div>
+              <p class="ph-info-rule-title">Lügen NICHT erlaubt</p>
+              <p class="ph-info-rule-text">
+                Du darfst lügen und Fragen ausweichen. Achte aber auf Widersprüche —
+                andere Spieler werden sie bemerken und nutzen.
+              </p>
+            </div>
+            <div>
+              <p class="ph-info-rule-title">Unter Druck</p>
+              <p class="ph-info-rule-text">
+                Wenn du unter Druck gerätst, stelle eine Gegenfrage oder rücke
+                jemand anderen gezielt in den Mittelpunkt. Panik ist dein größter Feind.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Rundenlogik</p>
+          <div class="ph-info-rounds">
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Vorstellungsrunde</span>
+              <p class="ph-info-round-text">
+                Jeder nennt kurz seinen Namen
+                <b>Bringe andere in Erklärungsnot, bevor deine eigene Geschichte zu wackeln beginnt.</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Runde 1</span>
+              <p class="ph-info-round-text">
+                Lerne die anderen kennen. Stelle gezielte Fragen.
+                <b>Wer reagiert nervös, wenn der Safe oder die Finanzen erwähnt werden?</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Runde 2</span>
+              <p class="ph-info-round-text">
+                Das Spiel wird intensiver. Neue Hinweise verändern die Lage.
+                <b>Bringe andere in Erklärungsnot, bevor deine eigene Geschichte zu wackeln beginnt.</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Runde 3</span>
+              <p class="ph-info-round-text">
+                Geheimnisse kommen ans Licht. Entscheide jetzt:
+                <b>Gestehst du kontrolliert ein, was sich nicht mehr verbergen lässt — oder lässt du jemand anderen ins Messer laufen?</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Auflösung</span>
+              <p class="ph-info-round-text">
+                Der Täter wird enttarnt, alle Geheimnisse aufgedeckt.
+                Mach dich bereit für das Finale.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Zwei kleine Dinge vorab</p>
+          <p class="ph-info-text">
+            <b>1.</b> Bitte lade dein Handy vor Spielstart auf. Du wirst es
+            benötigen, um dich zu orientieren und deine Rollenbeschreibungen
+            abrufen zu können.
+          </p>
+          <p class="ph-info-text">
+            <b>2.</b> Aktiviere während der Runden den Flugmodus, um ein
+            ungestörtes Spielerlebnis zu ermöglichen.
+          </p>
+        </div>
+
+      </section>
+
+      <!-- 7. Finaler CTA -->
+      <div class="nw-final-cta" data-reveal>
+        <p>Euer Moderator hat das Startsignal gegeben?</p>
+        <a class="button button-primary nw-final-btn" href="runde1.html" data-protected-link="runde1">
+          Runde 1 öffnen
+        </a>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <p><a href="../../impressum/index.html">@Impressum</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
