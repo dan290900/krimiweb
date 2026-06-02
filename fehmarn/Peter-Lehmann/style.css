@@ -148,6 +148,8 @@ main {
   color: var(--muted);
   font-size: 0.9rem;
   transition: 180ms ease;
+  min-width: 5.5rem;
+  text-align: center;
 }
 
 .phase-pill:hover,
