@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020c1a" />
+    <title>Auflösung | Mord im Seehotel</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      /* ── Auflösungs-Seite ── */
+
+      .afl-hero {
+        padding: 5rem 0 3rem;
+        text-align: center;
+      }
+
+      .afl-hero .eyebrow {
+        margin-bottom: 1rem;
+      }
+
+      .afl-hero h1 {
+        font-size: clamp(3.5rem, 9vw, 7rem);
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        line-height: 1;
+        color: var(--text);
+        margin: 0;
+      }
+
+      /* Audio */
+      .afl-audio {
+        padding: 3rem 0;
+        border-top: 1px solid var(--line);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+      }
+
+      .afl-section-label {
+        font-size: 0.72rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--ocean);
+        margin: 0;
+      }
+
+      .afl-audio audio {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 12px;
+        accent-color: var(--ocean);
+        background: rgba(77, 184, 212, 0.06);
+        border: 1px solid var(--line-strong);
+        padding: 0.5rem;
+        outline: none;
+      }
+
+      .afl-audio-note {
+        font-size: 0.82rem;
+        color: var(--muted);
+        margin: 0;
+        text-align: center;
+      }
+
+      /* Zum Vorlesen */
+      .afl-read {
+        padding: 3rem 0;
+        border-top: 1px solid var(--line);
+        max-width: 720px;
+        margin: 0 auto;
+      }
+
+      .afl-read-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .afl-read-title {
+        font-family: var(--display-font);
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+        font-weight: 600;
+        letter-spacing: -0.03em;
+        color: var(--text);
+        margin: 0;
+      }
+
+      .afl-read-badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.3rem 0.75rem;
+        border-radius: 999px;
+        background: rgba(77, 184, 212, 0.1);
+        border: 1px solid rgba(77, 184, 212, 0.25);
+        color: var(--ocean);
+        font-size: 0.68rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        flex-shrink: 0;
+      }
+
+      .afl-read-text {
+        background: rgba(77, 184, 212, 0.04);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 1.8rem 2rem;
+      }
+
+      .afl-read-text p {
+        font-size: 1.02rem;
+        line-height: 1.82;
+        color: var(--muted);
+        margin: 0 0 1.2rem;
+      }
+
+      .afl-read-text p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* CTAs */
+      .afl-ctas {
+        padding: 3.5rem 0 5rem;
+        border-top: 1px solid var(--line);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        text-align: center;
+      }
+
+      .afl-ctas-title {
+        font-size: 0.72rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--ocean);
+        margin: 0;
+      }
+
+      .afl-ctas-buttons {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .afl-ctas-hint {
+        font-size: 0.82rem;
+        color: var(--muted);
+        margin: 0;
+        max-width: 28rem;
+        line-height: 1.6;
+      }
+
+      /* Bewertung */
+      .afl-review {
+        padding: 3rem 0;
+        border-top: 1px solid var(--line);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.9rem;
+        text-align: center;
+      }
+
+      .afl-review-title {
+        font-family: var(--display-font);
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        color: var(--text);
+        margin: 0;
+      }
+
+      .afl-review-hint {
+        font-size: 0.9rem;
+        color: var(--muted);
+        margin: 0;
+        max-width: 28rem;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 640px) {
+        .afl-ctas-buttons .button {
+          width: 100%;
+        }
+
+        .afl-read-text {
+          padding: 1.2rem 1.4rem;
+        }
+      }
+    </style>
+  </head>
+  <body data-page="home">
+    <div class="page-noise" aria-hidden="true"></div>
+    <div class="page-gradient" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="https://www.darkside-games.de" target="_blank" rel="noopener">
+        <span class="brand-mark"></span>
+        <span>DARKSIDE GAMES</span>
+      </a>
+    </header>
+
+    <main>
+
+      <!-- Überschrift -->
+      <section class="afl-hero" data-reveal>
+        <p class="eyebrow">Mord im Seehotel</p>
+        <h1>Auflösung</h1>
+      </section>
+
+      <!-- Audio -->
+      <section class="afl-audio" data-reveal>
+        <p class="afl-section-label">Auflösung anhören</p>
+        <audio controls>
+          <source src="aufloesung.mp3" type="audio/mpeg" />
+          Dein Browser unterstützt kein Audio.
+        </audio>
+        <p class="afl-audio-note">Audio-Datei wird vom Moderator bereitgestellt.</p>
+      </section>
+
+      <!-- Zum Vorlesen -->
+      <div class="afl-read" data-reveal>
+        <div class="afl-read-header">
+          <h2 class="afl-read-title">Zum Vorlesen</h2>
+          <span class="afl-read-badge">Alternativ</span>
+        </div>
+        <div class="afl-read-text">
+          <p>
+            <!-- Auflösungstext hier einfügen -->
+            Der Text der Auflösung kommt hier hin.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bewertung -->
+      <div class="afl-review" data-reveal>
+        <p class="afl-review-title">Hat es euch gefallen?</p>
+        <p class="afl-review-hint">Wir freuen uns sehr über eine kurze Bewertung — es hilft uns riesig weiter.</p>
+        <a class="button button-primary" href="#" style="min-height: 3.4rem; padding: 0.9rem 2rem; font-size: 1rem; font-weight: 700;">
+          ★ &nbsp;Bewertung hinterlassen
+        </a>
+      </div>
+
+      <!-- Buttons -->
+      <div class="afl-ctas" data-reveal>
+        <p class="afl-ctas-title">Mehr von Darkside Games</p>
+        <div class="afl-ctas-buttons">
+          <a class="button button-primary" href="#" style="min-height: 3.4rem; padding: 0.9rem 2rem; font-size: 1rem; font-weight: 700;">
+            Zur Website
+          </a>
+          <a class="button button-ghost" href="#" style="min-height: 3.4rem; padding: 0.9rem 2rem; font-size: 1rem;">
+            Zu Amazon
+          </a>
+        </div>
+        <p class="afl-ctas-hint">Entdeckt weitere Mordmysterium-Spiele und erlebt mehr unvergessliche Abende.</p>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <p><a href="../../impressum/index.html">@Impressum</a></p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
