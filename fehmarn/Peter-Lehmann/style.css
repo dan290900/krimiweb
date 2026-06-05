@@ -392,8 +392,22 @@ h3 {
 
   .button { width: 100%; }
 
-  /* Großen Titel zentrieren */
-  .nw-header { text-align: center; }
+  /* Header auf Mobile kompakter */
+  .nw-header {
+    text-align: center;
+    padding: 2rem 0 1.5rem;
+  }
+
+  .nw-title {
+    font-size: clamp(1rem, 4.5vw, 1.3rem);
+  }
+
+  /* Beschreibungstext etwas lesbarer */
+  .nw-header .nw-scroll-hint {
+    font-size: 0.88rem !important;
+    letter-spacing: 0 !important;
+    line-height: 1.65;
+  }
 
   /* Alle Überschriften zentrieren */
   .nw-eyebrow,
@@ -1553,36 +1567,35 @@ h3 {
   }
 }
 
-/* Role card: auf schmalen Screens stapeln */
-@media (max-width: 720px) {
+/* Role card: gestapelt + Header zentriert ab 900px */
+@media (max-width: 900px) {
   .nw-role-card {
     grid-template-columns: 1fr;
   }
 
   .nw-role-img-wrap {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    align-items: end;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .nw-role-img {
+    max-width: 260px;
     width: 100%;
   }
 
-  .nw-role-badge {
-    align-self: end;
-  }
-}
-
-@media (max-width: 480px) {
-  .nw-role-img-wrap {
-    grid-template-columns: 1fr;
-    justify-items: center;
+  .nw-header {
+    text-align: center;
   }
 
-  .nw-role-img {
-    max-width: 220px;
-    width: 100%;
+  .nw-eyebrow,
+  .nw-role-name,
+  .nw-role-subtitle,
+  .nw-role-desc {
+    text-align: center;
+  }
+
+  .nw-hints-list {
+    text-align: left;
   }
 }
