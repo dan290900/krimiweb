@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020c1a" />
+    <title>Peter Lehmann | Mord im Seehotel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="home" data-role="Peter Lehmann">
+    <div class="page-noise" aria-hidden="true"></div>
+    <div class="page-gradient" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="https://www.darkside-games.de" target="_blank" rel="noopener">
+        <span class="brand-mark"></span>
+        <span>DARKSIDE GAMES</span>
+      </a>
+      <div class="phase-pills" aria-label="Spielphasen">
+        <a class="phase-pill is-current" href="index.html">Start</a>
+        <a class="phase-pill" href="runde1.html" data-protected-link="runde1">Runde 1</a>
+        <a class="phase-pill" href="runde2.html" data-protected-link="runde2">Runde 2</a>
+        <a class="phase-pill" href="runde3.html" data-protected-link="runde3">Runde 3</a>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- 1. Überschrift der Rolle -->
+      <section class="nw-header" data-reveal>
+        <p class="nw-eyebrow">Darkside Games · Mord im Seehotel</p>
+        <h1 class="nw-title">Deine Rollenakte</h1>
+        <p class="nw-scroll-hint" style="display: block; margin-top: 0.8rem; color: var(--muted);">Fehmarn – eine ruhige, windige Ostseeinsel. Doch in der Nacht von Dienstag auf Mittwoch verändert sich alles: Max Lehmann, der Sohn der Hoteleigentümer, wird tot aufgefunden.
+          Wie es dazu kam, müsst ihr gemeinsam herausfinden.
+          Lest nun eure Rolle aufmerksam durch und macht euch mit euren Informationen vertraut.
+        </p>
+      </section>
+
+      <!-- Spiel starten -->
+      <div class="nw-start" data-reveal>
+        <a class="button button-primary nw-start-btn" href="runde1.html" data-protected-link="runde1">
+          Spiel starten
+        </a>
+        <p>Erst drücken, wenn der Moderator das Spiel offiziell gestartet hat.<br>Du erhältst das Passwort für jede Runde direkt vom Moderator.</p>
+      </div>
+
+      <!-- 4. Deine Rolle (Bild + Hinweise) -->
+      <section class="nw-role" data-reveal>
+        <div class="nw-role-card">
+
+          <div class="nw-role-img-wrap">
+            <div class="nw-role-img">
+              <img src="../images/peter_lehmann.png" alt="Peter Lehmann">
+              <span class="nw-placeholder-initials">P.L.</span>
+            </div>
+            <span class="nw-role-badge">Deine Rolle</span>
+          </div>
+
+          <div class="nw-role-content">
+            <h2 class="nw-role-name">Peter Lehmann</h2>
+            <p class="nw-role-subtitle">Hotelinhaber</p>
+
+            <p class="nw-role-desc">
+              Du bist Peter Lehmann, 56 Jahre alt und Mitinhaber des Seehotels Fehmarn. Gemeinsam mit deiner Ex-Frau Sophie hast du das Hotel aufgebaut und betrachtest es bis heute als dein Lebenswerk. Du bist direkt, durchsetzungsstark und dafür bekannt, deine Meinung offen auszusprechen.
+            </p>
+            <p class="nw-role-desc">
+              Letzteres fällt dir allerdings regelmäßig auf die Füße. Statt Konflikte sachlich zu lösen, reagierst du oft impulsiv, triffst vorschnelle Aussagen und gerätst immer wieder mit Mitarbeitern und Geschäftspartnern aneinander. Wirtschaftlich bist du ein Naturtalent - im Umgang mit Menschen dagegen nicht immer.
+            </p>
+
+            <div class="nw-role-hints">
+              <p class="nw-hints-label">Spielhinweise</p>
+              <ul class="nw-hints-list">
+                <li>Du bist <b>nicht</b> der Mörder</li>
+                <li>Zum Tatzeitpunkt hast du einen Freund auf der Fähre begleitet</li>
+                <li>Gefühle zeigst du selten. Auch nach dem Tod deines Sohns</li>
+                <li>Deine Meinung sagst du oft ungefiltert</li>
+                <li>Dein Hotel steht für dich an erster Stelle</li>
+                <li>Zeige wenig Verständnis für andere</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- 5. Beziehungen -->
+      <section class="nw-relations" data-reveal>
+        <h2 class="nw-relations-title">Deine Beziehungen</h2>
+        <div class="nw-relations-wrapper">
+
+          <button class="nw-arrow nw-arrow--left" id="arrowLeft" aria-label="Zurück scrollen">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div class="nw-relations-track" id="relationsTrack">
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                  <img src="../images/max_lehmann.png" alt="Max Lehmann">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">M.M.</span>
+              </div>
+              <p class="nw-char-name">Max Lehmann</p>
+              <p class="nw-char-rel"> Dein Sohn und Opfer des Abends. Euer Verhältnis war aufgrund verschiedener Meinungsverschiedenheiten sehr angespannt.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                  <img src="../images/sophie_mey.png" alt="Sophie Mey">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">S.M.</span>
+              </div>
+              <p class="nw-char-name">Sophie Mey</p>
+              <p class="nw-char-rel">Deine Ex-Frau und Geschäftspartnerin. Ihr streitet euch regelmäßig. Meistens geht der Streit von dir aus.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                  <img src="../images/julia_petrovic.png" alt="Julia Petrovic">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">J.P.</span>
+              </div>
+              <p class="nw-char-name">Julia Petrovic</p>
+              <p class="nw-char-rel">Sie arbeitet bei der örtlichen Polizei. Ihr kennt euch seit Jahren. Besonders gut versteht ihr euch nicht.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                 <img src="../images/tracy_fezur.png" alt="Tracy Fezur">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">T.F.</span>
+              </div>
+              <p class="nw-char-name">Tracy Fezur</p>
+              <p class="nw-char-rel">Sie arbeitet im Service eures Hotels. Wegen ihres jungen Alters misstraust du ihr.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                 <img src="../images/alex_mey.png" alt="Alex Mey"> 
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">A.M.</span>
+              </div>
+              <p class="nw-char-name">Alex Mey</p>
+              <p class="nw-char-rel">Sophies neuer Mann. Du hältst ihn für einen Blender.</p>
+            </div>
+    
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                <img src="../images/kai_krueger.png" alt="Kai Krüger">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">K.K.</span>
+              </div>
+              <p class="nw-char-name">Kai Krüger</p>
+              <p class="nw-char-rel">Der Koch des Hotels. Zwischen euch herrscht eine angespannte Stimmung, nicht zuletzt, weil du ihn letztes Jahr beinahe entlassen hast.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                 <img src="../images/cloe_simons.png" alt="Cloe Simons">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">C.S.</span>
+              </div>
+              <p class="nw-char-name">Cloe Simons</p>
+              <p class="nw-char-rel">Sie leitet den Spa-Bereich des Hotels. Ihr habt kaum persönlichen Kontakt.</p>
+            </div>
+
+          </div>
+
+          <button class="nw-arrow nw-arrow--right" id="arrowRight" aria-label="Weiter scrollen">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+        </div>
+        <p class="nw-scroll-hint">← Seitwärts wischen →</p>
+      </section>
+
+      <!-- 6. Spielinformationen -->
+      <section class="nw-gameinfo" data-reveal>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Kleidungsstil</p>
+          <p class="ph-info-text">
+            Du bevorzugst gepflegte, klassische Kleidung und legst Wert auf ein seriöses Auftreten.
+          </p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Wie du deine Rolle am besten spielst</p>
+          <p class="ph-info-text">
+            Spiele selbstbewusst, direkt und manchmal etwas hitzköpfig. Sympathie ist nicht dein Ziel. Reagiere auf Vorwürfe eher mit Gegenfragen oder Gegenangriffen als mit langen Erklärungen. Du bist überzeugt davon, dass die meisten Menschen zu empfindlich sind, und sagst offen, was du denkst. Auch wenn du um deinen Sohn trauerst, zeigst du diese Gefühle kaum nach außen.
+          </p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Deine Ziele des Abends</p>
+          <p class="ph-info-text">
+            1. Überzeuge die Gruppe davon, dass du nichts mit Max' Tod zu tun hast.
+          </p>
+          <p class="ph-info-text">
+            2. Finde heraus, wer wirklich für seinen Tod verantwortlich ist. Hinterfrage dabei die Motive der anderen Anwesenden.
+          </p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Spielregeln</p>
+          <div class="ph-info-rules">
+            <div>
+              <p class="ph-info-rule-title">Lügen NICHT erlaubt</p>
+              <p class="ph-info-rule-text">
+                Du darfst nicht lügen, aber Fragen aus dem Weg gehen..
+              </p>
+            </div>
+            <div>
+              <p class="ph-info-rule-title">Unter Druck</p>
+              <p class="ph-info-rule-text">
+                Wenn du unter Druck gerätst, nutze Gegenfragen und lenke auf den Mordfall zurück.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Rundenlogik</p>
+          <div class="ph-info-rounds">
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Vorstellungsrunde</span>
+              <p class="ph-info-round-text">
+                <b>Tretet in eure Rollen und stellt euch gegenseitig vor. Wer seid ihr, was macht ihr im Hotel — und was verschweigt ihr vielleicht?</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Runde 1</span>
+              <p class="ph-info-round-text">
+                <b>Lernt die Fakten kennen und stellt erste Fragen. Wer war wo? Wer hatte ein Motiv? Erste Verdächtige tauchen auf.</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Runde 2</span>
+              <p class="ph-info-round-text">
+                <b>Neue Beweise kommen ans Licht. Überprüft Aussagen, testet Reaktionen und beobachtet, wer nervös wird.</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Runde 3</span>
+              <p class="ph-info-round-text">
+                <b>Alle Karten liegen auf dem Tisch. Verbindet die Hinweise, konfrontiert die Verdächtigen und einigt euch auf einen Täter.</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Auflösung</span>
+              <p class="ph-info-round-text">
+                <b>Der Täter wird enttarnt, alle Geheimnisse aufgedeckt.</b>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Zwei kleine Dinge vorab</p>
+          <p class="ph-info-text">
+            <b>1.</b> Bitte lade dein Handy vor Spielstart auf. Du wirst es
+            benötigen, um dich zu orientieren und deine Rollenbeschreibungen
+            abrufen zu können.
+          </p>
+          <p class="ph-info-text">
+            <b>2.</b> Aktiviere während der Runden den Flugmodus, um ein
+            ungestörtes Spielerlebnis zu ermöglichen.
+          </p>
+        </div>
+
+      </section>
+
+      <!-- Video -->
+      <div class="nw-video" data-reveal>
+        <p class="nw-video-label">Intro Video — Gerne am Vorabend schauen, um optimal vorbereitet zu sein</p>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_EgcWd3CIG8?si=J_GxDn3-Pv0jh7rU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- 7. Finaler CTA -->
+      <div class="nw-final-cta" data-reveal>
+        <p>Euer Moderator hat das Startsignal gegeben?</p>
+        <a class="button button-primary nw-final-btn" href="runde1.html" data-protected-link="runde1">
+          Runde 1 öffnen
+        </a>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <p><a href="../../impressum/index.html">@Impressum</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

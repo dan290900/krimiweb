@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const roundConfig = {
-    runde1: { password: "FEHMARN", label: "Runde 1" },
-    runde2: { password: "OSTSEE", label: "Runde 2" },
-    runde3: { password: "STRAND", label: "Runde 3" },
+    runde1: { password: "DARKSIDE", label: "Runde 1" },
+    runde2: { password: "INSELHOTEL", label: "Runde 2" },
+    runde3: { password: "OSTSEESTURM", label: "Runde 3" },
   };
 
   const storagePrefix = "krimi:peter-lehmann:";
