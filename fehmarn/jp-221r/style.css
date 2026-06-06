@@ -485,9 +485,39 @@ h3 {
 }
 
 .runde-section {
-  padding: 2.2rem 0;
   border-bottom: 1px solid rgba(180, 220, 240, 0.07);
   max-width: 680px;
+}
+
+/* Akkordeon: summary als klickbarer Titel */
+.runde-section summary.runde-section-title {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.6rem 0;
+  cursor: pointer;
+  user-select: none;
+  margin: 0;
+}
+
+.runde-section summary.runde-section-title::-webkit-details-marker {
+  display: none;
+}
+
+.runde-section summary.runde-section-title::after {
+  content: "+";
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--ocean);
+  opacity: 0.7;
+  flex-shrink: 0;
+  transition: transform 200ms ease;
+}
+
+.runde-section[open] summary.runde-section-title::after {
+  content: "−";
 }
 
 .runde-section-title {
@@ -496,7 +526,11 @@ h3 {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--ocean);
-  margin: 0 0 0.85rem;
+  margin: 0;
+}
+
+.runde-section-body {
+  padding-bottom: 1.6rem;
 }
 
 .runde-section p {
@@ -508,6 +542,19 @@ h3 {
 
 .runde-section p:last-child {
   margin-bottom: 0;
+}
+
+.runde-section ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.runde-section li {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 @media (max-width: 560px) {

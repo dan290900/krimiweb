@@ -71,12 +71,26 @@
         margin: 0 auto;
       }
 
+      .afl-read-details {
+        width: 100%;
+      }
+
       .afl-read-header {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 1rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0;
+        padding-bottom: 1.5rem;
+        cursor: pointer;
+        list-style: none;
       }
+
+      .afl-read-details[open] .afl-read-header {
+        padding-bottom: 1.2rem;
+      }
+
+      .afl-read-header::-webkit-details-marker { display: none; }
 
       .afl-read-title {
         font-family: var(--display-font);
@@ -99,6 +113,11 @@
         letter-spacing: 0.18em;
         text-transform: uppercase;
         flex-shrink: 0;
+        pointer-events: none;
+      }
+
+      .afl-read-details[open] .afl-read-badge {
+        background: rgba(77, 184, 212, 0.18);
       }
 
       .afl-read-text {
@@ -215,7 +234,7 @@
       <section class="afl-audio" data-reveal>
         <p class="afl-section-label">Auflösung anhören</p>
         <audio controls>
-          <source src="aufloesung.mp3" type="audio/mpeg" />
+          <source src="../images/aufloesung-mis.mp3" type="audio/mpeg" />
           Dein Browser unterstützt kein Audio.
         </audio>
         <p class="afl-audio-note">Audio-Datei wird vom Moderator bereitgestellt.</p>
@@ -223,16 +242,113 @@
 
       <!-- Zum Vorlesen -->
       <div class="afl-read" data-reveal>
-        <div class="afl-read-header">
-          <h2 class="afl-read-title">Zum Vorlesen</h2>
-          <span class="afl-read-badge">Alternativ</span>
-        </div>
+        <details class="afl-read-details">
+          <summary class="afl-read-header">
+            <h2 class="afl-read-title">Zum Vorlesen</h2>
+            <span class="afl-read-badge">Ausklappen</span>
+          </summary>
         <div class="afl-read-text">
-          <p>
-            <!-- Auflösungstext hier einfügen -->
-            Der Text der Auflösung kommt hier hin.
-          </p>
+          <p>Die Wahrheit hinter dem Tod von Max Mey beginnt nicht in der Nacht seines Todes.</p>
+
+          <p>Sie beginnt ein Jahr zuvor.</p>
+
+          <p>Zu diesem Zeitpunkt vertraute Sophie Mey ihrem Ehemann Alex ihre Pläne für die Zukunft des Seehotels Fehmarn an. Nach vielen Jahren harter Arbeit dachte sie über die Nachfolge nach. Die Hotelanteile sollten eines Tages an die nächste Generation übergehen. Für Alex war diese Nachricht von großer Bedeutung.</p>
+
+          <p>Er hatte viel Zeit, Energie und Leidenschaft in das Hotel investiert. Er sah sich selbst als Teil seiner Zukunft. Doch gleichzeitig wurde ihm bewusst, dass zwischen ihm und diesem Ziel eine Person stand: Max Mey.</p>
+
+          <p>Max war der Sohn von Sophie und Peter. Der rechtmäßige Erbe. Derjenige, dem das Hotel eines Tages gehören könnte.</p>
+
+          <p>Was zunächst nur ein Gedanke war, entwickelte sich langsam zu einem Plan.</p>
+
+          <p>Alex wollte Max nicht töten. Er wollte ihn vertreiben. Gerade deswegen, weil Alex auch wusste, dass Max schon Pläne hatte, den Hotel Alltag so oder so für sein Studium zu verlassen.</p>
+
+          <p>In den folgenden Monaten begann er, gezielt Druck auf Max auszuüben. Kleine Streiche. Verunsichernde Situationen. Ereignisse, die harmlos wirkten, in ihrer Summe jedoch eine klare Botschaft vermittelten.</p>
+
+          <p>Du bist hier nicht mehr willkommen.</p>
+
+          <p>Bei einigen dieser Aktionen erhielt Alex Unterstützung von Kai Krüger. Kai glaubte jedoch, es handele sich lediglich um harmlose Scherze. Er kannte weder das wahre Motiv noch die Tragweite der Ereignisse. Dennoch machte er mit, da er mit Max nicht das beste Verhältnis pflegte.</p>
+
+          <p>Doch Max ging nicht.</p>
+
+          <p>Trotz der Spannungen. Trotz der Konflikte mit seinem Vater. Trotz seiner Zweifel an der Zukunft und seiner Pläne bezüglich eines Studiums.</p>
+
+          <p>Er blieb.</p>
+
+          <p>Und damit begann die letzte Phase des Plans.</p>
+
+          <p>Alex wusste, dass Max regelmäßig die Sauna des Hotels nutzte. Er wusste außerdem, dass sich die Anlage technisch manipulieren ließ. Über Kai beschaffte er eine Stickstoffflasche. Ein Gas, das unsichtbar, geruchlos und für Menschen praktisch nicht wahrnehmbar ist.</p>
+
+          <p>Sein Plan war ebenso riskant wie verhängnisvoll.</p>
+
+          <p>Er wollte Max kurzzeitig bewusstlos machen.</p>
+
+          <p>Anschließend wollte er ihn retten.</p>
+
+          <p>Max sollte glauben, dass er im Hotel nicht mehr sicher war. Dass es besser wäre zu gehen. Dass seine Zukunft woanders lag. Besonders deswegen, da er abergläubische Tendenzen hatte.</p>
+
+          <p>Doch Alex überschätzte sein Wissen und unterschätzte die Gefahr.</p>
+
+          <p>In der Tatnacht wurde die Stickstoffflasche an die Anlage angeschlossen. Die Sauerstoffkonzentration in der Sauna begann zu sinken.</p>
+
+          <p>Langsam.</p>
+
+          <p>Unbemerkt.</p>
+
+          <p>Geräuschlos.</p>
+
+          <p>Max bemerkte nicht, was geschah.</p>
+
+          <p>Als erste Symptome auftraten, war es bereits zu spät.</p>
+
+          <p>Die Sauerstoffversorgung seines Körpers brach zusammen. Er verlor das Bewusstsein. Sekunden wurden zu Minuten.</p>
+
+          <p>Und noch bevor Hilfe möglich war, starb Max Mey in der Sauna des Hotels.</p>
+
+          <p>Nicht durch einen Unfall.</p>
+
+          <p>Nicht durch Suizid.</p>
+
+          <p>Sondern durch einen Plan, der niemals als Mord gedacht war und dennoch mit einem Todesfall endete.</p>
+
+          <p>Als Alex erkannte, was geschehen war, war der Schaden bereits irreversibel. Der Mann, den er aus dem Hotel vertreiben wollte, war tot.</p>
+
+          <p>Von diesem Moment an begann die Vertuschung.</p>
+
+          <p>Die Streiche wurden verschwiegen.</p>
+
+          <p>Die Stickstoffflasche wurde zum entscheidenden Beweisstück.</p>
+
+          <p>Und die Beteiligten versuchten, ihre Rollen in den Ereignissen zu verbergen.</p>
+
+          <p>Doch Hinweise blieben zurück.</p>
+
+          <p>Die Stimmen im Korridor.</p>
+
+          <p>Die Silhouette am Technikraum.</p>
+
+          <p>Der Kaufbeleg der Stickstoffflasche.</p>
+
+          <p>Die Verbindung zwischen Alex und Kai.</p>
+
+          <p>Und schließlich das Motiv.</p>
+
+          <p>Erst als alle diese Puzzleteile zusammengesetzt wurden, entstand das vollständige Bild.</p>
+
+          <p>Max Mey starb nicht, weil jemand ihn töten wollte.</p>
+
+          <p>Er starb, weil jemand glaubte, das Leben eines anderen Menschen kontrollieren zu können.</p>
+
+          <p>Aus einem Plan zur Einschüchterung wurde eine Katastrophe.</p>
+
+          <p>Aus Angst wurde Schuld.</p>
+
+          <p>Und aus einem vermeintlich harmlosen Streich wurde ein tödlicher Fehler.</p>
+
+          <p>Dies ist die Wahrheit über die Ereignisse im Seehotel Fehmarn.</p>
+
+          <p>Vielen Dank fürs Spielen. Wir hoffen euch hat es Spaß gemacht!</p>
         </div>
+        </details>
       </div>
 
       <!-- Bewertung -->
