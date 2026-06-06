@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     form.onsubmit = (event) => {
       event.preventDefault();
-      if (normalizePassword(input.value) === round.password) {
+      if (normalizePassword(input.value) === normalizePassword(round.password)) {
         unlockRound(roundKey);
         accessModal.hidden = true;
         error.textContent = "";

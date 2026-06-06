@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const roundConfig = {
-    runde1: { password: "Darkside", label: "Runde 1" },
-    runde2: { password: "Inselhotel", label: "Runde 2" },
-    runde3: { password: "Ostseesturm", label: "Runde 3" },
+    runde1: { password: "DARKSIDE", label: "Runde 1" },
+    runde2: { password: "INSELHOTEL", label: "Runde 2" },
+    runde3: { password: "OSTSEESTURM", label: "Runde 3" },
   };
 
   const storagePrefix = "krimi:peter-lehmann:";
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     form.onsubmit = (event) => {
       event.preventDefault();
-      if (normalizePassword(input.value) === round.password) {
+      if (normalizePassword(input.value) === normalizePassword(round.password)) {
         unlockRound(roundKey);
         accessModal.hidden = true;
         error.textContent = "";
