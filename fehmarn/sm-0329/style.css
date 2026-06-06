@@ -510,9 +510,48 @@ h3 {
   margin-bottom: 0;
 }
 
-@media (max-width: 560px) {
-  .runde-hero { grid-template-columns: 1fr; padding-top: 3rem; }
-  .runde-portrait { width: 120px; }
+@media (max-width: 640px) {
+  .runde-hero {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1.5rem;
+    padding-top: 3rem;
+    text-align: center;
+  }
+
+  .runde-hero-copy {
+    align-items: center;
+  }
+
+  .runde-subtitle {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .runde-portrait {
+    width: 120px;
+    margin-inline: auto;
+  }
+
+  .runde-sections {
+    text-align: center;
+  }
+
+  .runde-section {
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .runde-section ul {
+    display: inline-grid;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .page-nav {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 /* ═══════════════════════════════════════
