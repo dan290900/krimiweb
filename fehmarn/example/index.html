@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020c1a" />
+    <title>Max Mustermann | Mord im Seehotel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="home" data-role="Max Mustermann">
+    <div class="page-noise" aria-hidden="true"></div>
+    <div class="page-gradient" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="https://www.darkside-games.de" target="_blank" rel="noopener">
+        <span class="brand-mark"></span>
+        <span>DARKSIDE GAMES</span>
+      </a>
+      <div class="phase-pills" aria-label="Spielphasen">
+        <a class="phase-pill is-current" href="index.html">Start</a>
+        <a class="phase-pill" href="runde1.html" data-protected-link="runde1">Runde 1</a>
+        <a class="phase-pill" href="runde2.html" data-protected-link="runde2">Runde 2</a>
+        <a class="phase-pill" href="runde3.html" data-protected-link="runde3">Runde 3</a>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- 1. Überschrift der Rolle -->
+      <section class="nw-header" data-reveal>
+        <p class="nw-eyebrow">Darkside Games · Mord im Seehotel</p>
+        <h1 class="nw-title">Deine Rollenakte</h1>
+        <p>
+          <b>Beispiel-Rollenseite</b> Alle Inhalte sind fiktiv und dienen nur der Veranschaulichung der Rollenseiten. Die Passwörter für die einzelnen Runden sind: KRIMI (für Runde 1), DINNER (für Runde 2) und MORD (für Runde 3).
+        </p>
+        <p>Im Spiel erhält jeder Spieler eine Website wie diese, auf der er sich optimal auf das Spiel vorbereiten und im Verlauf des Spiels mit jeder Runde neue Informationen und Hinweise freischalten kann.</p>
+      </section>
+
+      <!-- Spiel starten -->
+      <div class="nw-start" data-reveal>
+        <a class="button button-primary nw-start-btn" href="runde1.html" data-protected-link="runde1">
+          Spiel starten
+        </a>
+        <p>Erst drücken, wenn der Moderator das Spiel offiziell gestartet hat.<br>Du erhältst das Passwort für jede Runde direkt vom Moderator.</p>
+      </div>
+
+      <!-- 4. Deine Rolle (Bild + Hinweise) -->
+      <section class="nw-role" data-reveal>
+        <div class="nw-role-card">
+
+          <div class="nw-role-img-wrap">
+            <div class="nw-role-img">
+              <img src="../images/alex_mey.png" alt="Max Mustermann">
+              <span class="nw-placeholder-initials">M.M.</span>
+            </div>
+            <span class="nw-role-badge">Deine Rolle</span>
+          </div>
+
+          <div class="nw-role-content">
+            <h2 class="nw-role-name">Max Mustermann</h2>
+            <p class="nw-role-subtitle">Veranstaltungsleiter des Seehotels</p>
+
+            <p class="nw-role-desc">
+              Du bist Max Mustermann, 34 Jahre alt und organisierst die Veranstaltungen des Seehotels. Du wirkst zuverlässig, humorvoll und bestens vorbereitet. Hinter den Kulissen kämpfst du jedoch mit Schulden, von denen im Hotel niemand erfahren soll.
+            </p>
+
+            <div class="nw-role-hints">
+              <p class="nw-hints-label">Spielhinweise</p>
+              <ul class="nw-hints-list">
+                <li>Du bist nicht der Täter, verheimlichst aber einen Diebstahl aus dem Hotelsafe.</li>
+                <li>Niemand darf erfahren, dass Viktor Brandt dich kurz vor seinem Tod erpresst hat.</li>
+                <li>Du darfst ausweichen und lügen, solltest dich dabei aber nicht in Widersprüche verwickeln.</li>
+                <li>Dein behaupteter Aufenthaltsort zum Tatzeitpunkt: der leere Festsaal, wo du die Technik geprüft haben willst.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- 5. Beziehungen -->
+      <section class="nw-relations" data-reveal>
+        <h2 class="nw-relations-title">Deine Beziehungen</h2>
+        <div class="nw-relations-wrapper">
+
+          <button class="nw-arrow nw-arrow--left" id="arrowLeft" aria-label="Zurück scrollen">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div class="nw-relations-track" id="relationsTrack">
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                <img src="../images/max_lehmann.png" alt="Viktor Brandt">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">V.B.</span>
+              </div>
+              <p class="nw-char-name">Viktor Brandt</p>
+              <p class="nw-char-rel">Das Opfer des Abends. Er kannte deine Geldprobleme und verlangte einen Anteil aus dem gestohlenen Geld.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                <img src="../images/sophie_mey.png" alt="Lina Berger">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">L.B.</span>
+              </div>
+              <p class="nw-char-name">Lina Berger</p>
+              <p class="nw-char-rel">Die Rezeptionistin ist deine engste Freundin. Du hast ihr erzählt, dass Viktor dich unter Druck gesetzt hat, aber nicht warum.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                <img src="../images/travis_fezur.png" alt="Tom Winter">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">T.W.</span>
+              </div>
+              <p class="nw-char-name">Tom Winter</p>
+              <p class="nw-char-rel">Der Barkeeper schuldet dir einen Gefallen. Er könnte dein Alibi bestätigen, hat dich im Festsaal aber nie gesehen.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                <img src="../images/cloe_simons.png" alt="Elena Koch">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">E.K.</span>
+              </div>
+              <p class="nw-char-name">Elena Koch</p>
+              <p class="nw-char-rel">Die Hotelchefin vertraut dir. Ausgerechnet aus ihrem Büro hast du den Ersatzschlüssel für den Safe genommen.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                <img src="../images/kai_krueger.png" alt="Noah Richter">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">N.R.</span>
+              </div>
+              <p class="nw-char-name">Noah Richter</p>
+              <p class="nw-char-rel">Der Hausmeister sah dich am Abend in der Nähe des Büros. Du weißt nicht, wie viel er wirklich beobachtet hat.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                <img src="../images/julia_petrovic.png" alt="Ida Falk">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">I.F.</span>
+              </div>
+              <p class="nw-char-name">Ida Falk</p>
+              <p class="nw-char-rel">Die Journalistin recherchierte über Viktor. Ihr habt Informationen getauscht, obwohl du ihr nicht vollständig vertraust.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                <img src="../images/peter_lehmann.png" alt="Oskar Stein">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">O.S.</span>
+              </div>
+              <p class="nw-char-name">Oskar Stein</p>
+              <p class="nw-char-rel">Der Musiker des Abends stritt öffentlich mit Viktor. Sein auffälliger Streit kommt dir als Ablenkung sehr gelegen.</p>
+            </div>
+
+          </div>
+
+          <button class="nw-arrow nw-arrow--right" id="arrowRight" aria-label="Weiter scrollen">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+        </div>
+        <p class="nw-scroll-hint">← Seitwärts wischen →</p>
+      </section>
+
+      <!-- 6. Spielinformationen -->
+      <section class="nw-gameinfo" data-reveal>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Was ist passiert?</p>
+          
+          <p class="ph-info-text">
+            Vor drei Wochen hast du 8.000 Euro aus dem Hotelsafe genommen. Du wolltest damit eine dringende Schuld begleichen und das Geld zurücklegen, bevor jemand den Verlust bemerkt.
+          </p>
+          
+          <p class="ph-info-text">
+            Viktor Brandt beobachtete dich zufällig mit dem Ersatzschlüssel. Er kombinierte die Hinweise und begann, dich zu erpressen. Am Tatabend solltest du ihm im Bootshaus 3.000 Euro übergeben.
+          </p>
+          
+          <p class="ph-info-text">
+            Du gingst tatsächlich zum Bootshaus, hattest aber nur einen leeren Umschlag dabei. Nach einem heftigen Wortwechsel bist du gegangen. Viktor lebte zu diesem Zeitpunkt noch.
+          </p>
+          
+          <p class="ph-info-text">
+            Später hörtest du, dass Viktor tot gefunden wurde. Aus Angst, wegen des Streits und des Diebstahls verdächtigt zu werden, hast du behauptet, die ganze Zeit im Festsaal gewesen zu sein.
+          </p>
+          
+          <p class="ph-info-text">
+            Du willst den Mord aufklären, ohne dass dein eigenes Verbrechen ans Licht kommt. Das macht jede ehrliche Aussage für dich gefährlich.
+          </p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Kleidungsstil</p>
+          <p class="ph-info-text">
+            Gepflegte Abendkleidung mit Namensschild oder Notizbuch. Du wirkst organisiert, zugänglich und leicht überarbeitet.
+          </p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Wie du deine Rolle am besten spielst</p>
+          <p class="ph-info-text">
+            Spiele Max als hilfsbereiten Organisator, der überall gleichzeitig gebraucht wird. Bei Fragen zu Viktor darfst du nervös werden, solltest deine Unruhe aber mit dem Stress der Veranstaltung erklären. Verteidige dein falsches Alibi so lange wie möglich.
+          </p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Deine Ziele des Abends</p>
+          <p class="ph-info-text">
+            1. Herausfinden, wer Viktor getötet hat, ohne deinen Diebstahl offenzulegen.
+          </p>
+          <p class="ph-info-text">
+            2. Verhindern, dass dein Streit im Bootshaus und dein falsches Alibi miteinander verbunden werden.
+          </p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Spielregeln</p>
+          <div class="ph-info-rules">
+            <div>
+              <p class="ph-info-rule-title">Lügen erlaubt</p>
+              <p class="ph-info-rule-text">
+                Du darfst lügen. Achte jedoch darauf, dass du durch deine Lügen in keine Widersprüche gerätst. Es ist hilfreich, sich eine kleine Hintergrundgeschichte zurechtzulegen, um deine Lügen glaubwürdig zu machen.
+              </p>
+            </div>
+            <div>
+              <p class="ph-info-rule-title">Unter Druck</p>
+              <p class="ph-info-rule-text">
+                Wenn du unter Druck gerätst, nutze Gegenfragen und lenke auf den Mordfall zurück.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Rundenlogik</p>
+          <div class="ph-info-rounds">
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Vorstellungsrunde</span>
+              <p class="ph-info-round-text">
+                <b>Tretet in eure Rollen und stellt euch gegenseitig vor. Wer seid ihr, was macht ihr im Hotel — und was verschweigt ihr vielleicht?</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Runde 1</span>
+              <p class="ph-info-round-text">
+                <b>Lernt die Fakten kennen und stellt erste Fragen. Wer war wo? Wer hatte ein Motiv? Erste Verdächtige tauchen auf.</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Runde 2</span>
+              <p class="ph-info-round-text">
+                <b>Neue Beweise kommen ans Licht. Überprüft Aussagen, testet Reaktionen und beobachtet, wer nervös wird.</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Runde 3</span>
+              <p class="ph-info-round-text">
+                <b>Alle Karten liegen auf dem Tisch. Verbindet die Hinweise, konfrontiert die Verdächtigen und einigt euch auf einen Täter.</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Auflösung</span>
+              <p class="ph-info-round-text">
+                <b>Der Täter wird enttarnt, alle Geheimnisse aufgedeckt.</b>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Zwei kleine Dinge vorab</p>
+          <p class="ph-info-text">
+            <b>1.</b> Bitte lade dein Handy vor Spielstart auf. Du wirst es
+            benötigen, um dich zu orientieren und deine Rollenbeschreibungen
+            abrufen zu können.
+          </p>
+          <p class="ph-info-text">
+            <b>2.</b> Aktiviere während der Runden den Flugmodus, um ein
+            ungestörtes Spielerlebnis zu ermöglichen.
+          </p>
+        </div>
+
+      </section>
+
+      <!-- Video -->
+      <div class="nw-video" data-reveal>
+        <p class="nw-video-label">Intro Video — Gerne am Vorabend schauen, um optimal vorbereitet zu sein.</p>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_EgcWd3CIG8?si=J_GxDn3-Pv0jh7rU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- 7. Finaler CTA -->
+      <div class="nw-final-cta" data-reveal>
+        <p>Euer Moderator hat das Startsignal gegeben?</p>
+        <a class="button button-primary nw-final-btn" href="runde1.html" data-protected-link="runde1">
+          Runde 1 öffnen
+        </a>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <p><a href="../../impressum/index.html">@Impressum</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
