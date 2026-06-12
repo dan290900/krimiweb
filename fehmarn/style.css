@@ -398,6 +398,12 @@ h3 {
   text-align: center;
 }
 
+.r1-ready-text {
+  padding-top: 0;
+  border-top: none;
+  margin-bottom: 5rem;
+}
+
 .r1-text-title {
   font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   font-weight: 700;
@@ -431,6 +437,18 @@ h3 {
   color: rgba(180, 220, 240, 0.6) !important;
   max-width: 36rem;
   line-height: 1.6;
+}
+
+.r1-start-banner .r1-start-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.r1-start-button {
+  min-height: 3.6rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
 }
 
 @media (max-width: 560px) {

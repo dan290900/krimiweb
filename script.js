@@ -1,4 +1,3 @@
-// Gemeinsame UI-Logik fuer alle Seiten des Sophie-Mey-Prototyps.
 document.addEventListener("DOMContentLoaded", () => {
   const roundConfig = {
     runde1: { password: "FEHMARN", label: "Runde 1" },
@@ -12,7 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
     : null;
   const revealItems = document.querySelectorAll("[data-reveal]");
   const protectedLinks = document.querySelectorAll("[data-protected-link]");
-  const accessModal = createAccessModal();
+  const revealVariants = ["reveal-left", "reveal-right", "reveal-pop", "reveal-drop"];
+  const productFilter = document.querySelector("[data-product-filter]");
+  const productCards = document.querySelectorAll("[data-product-card]");
 
   function getStorageKey(roundKey) {
     return `${storagePrefix}${roundKey}:unlocked`;
@@ -34,9 +35,46 @@ document.addEventListener("DOMContentLoaded", () => {
     return value.trim().toUpperCase();
   }
 
+  function createAccessModal() {
+    const modal = document.createElement("div");
+    modal.className = "access-modal";
+    modal.hidden = true;
+    modal.innerHTML = `
+      <div class="access-card" role="dialog" aria-modal="true" aria-labelledby="access-title">
+        <p class="eyebrow">Zugang geschuetzt</p>
+        <h2 id="access-title" data-access-title>Runde freischalten</h2>
+        <p data-access-hint></p>
+        <form class="access-form" data-access-form>
+          <label class="access-label" for="access-password">
+            Passwort
+            <input
+              id="access-password"
+              class="access-input"
+              data-access-input
+              type="password"
+              inputmode="text"
+              autocomplete="off"
+              spellcheck="false"
+            />
+          </label>
+          <p class="access-error" data-access-error aria-live="polite"></p>
+          <div class="access-actions">
+            <button class="button button-primary" type="submit">Freischalten</button>
+            <button class="button button-ghost" type="button" data-access-cancel>Abbrechen</button>
+          </div>
+        </form>
+      </div>
+    `;
+
+    document.body.appendChild(modal);
+    return modal;
+  }
+
+  const accessModal = protectedLinks.length || pageRound ? createAccessModal() : null;
+
   function openAccessModal(roundKey, onSuccess) {
     const round = roundConfig[roundKey];
-    if (!round) {
+    if (!round || !accessModal) {
       return;
     }
 
@@ -108,6 +146,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  revealItems.forEach((item, index) => {
+    const delay = Math.min((index % 8) * 85, 420);
+    item.style.setProperty("--reveal-delay", `${delay}ms`);
+
+    if (!item.classList.contains("hero-home")) {
+      item.classList.add(revealVariants[index % revealVariants.length]);
+    }
+  });
+
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -119,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       },
       {
-        threshold: 0.18,
+        threshold: 0.16,
         rootMargin: "0px 0px -40px 0px",
       }
     );
@@ -129,47 +176,85 @@ document.addEventListener("DOMContentLoaded", () => {
     revealItems.forEach((item) => item.classList.add("is-visible"));
   }
 
-  // Subtiles Licht, das der Maus folgt und dem Layout etwas Tiefe gibt.
   const root = document.documentElement;
   window.addEventListener("pointermove", (event) => {
-    const x = `${Math.round((event.clientX / window.innerWidth) * 100)}%`;
-    const y = `${Math.round((event.clientY / window.innerHeight) * 100)}%`;
-    root.style.setProperty("--pointer-x", x);
-    root.style.setProperty("--pointer-y", y);
+    const xPercent = Math.round((event.clientX / window.innerWidth) * 100);
+    const yPercent = Math.round((event.clientY / window.innerHeight) * 100);
+    const floatX = `${(50 - xPercent) * 0.16}px`;
+    const floatY = `${(50 - yPercent) * 0.12}px`;
+
+    root.style.setProperty("--pointer-x", `${xPercent}%`);
+    root.style.setProperty("--pointer-y", `${yPercent}%`);
+    root.style.setProperty("--float-x", floatX);
+    root.style.setProperty("--float-y", floatY);
   });
 
-  function createAccessModal() {
-    const modal = document.createElement("div");
-    modal.className = "access-modal";
-    modal.hidden = true;
-    modal.innerHTML = `
-      <div class="access-card" role="dialog" aria-modal="true" aria-labelledby="access-title">
-        <p class="eyebrow">Zugang geschuetzt</p>
-        <h2 id="access-title" data-access-title>Runde freischalten</h2>
-        <p data-access-hint></p>
-        <form class="access-form" data-access-form>
-          <label class="access-label" for="access-password">
-            Passwort
-            <input
-              id="access-password"
-              class="access-input"
-              data-access-input
-              type="password"
-              inputmode="text"
-              autocomplete="off"
-              spellcheck="false"
-            />
-          </label>
-          <p class="access-error" data-access-error aria-live="polite"></p>
-          <div class="access-actions">
-            <button class="button button-primary" type="submit">Freischalten</button>
-            <button class="button button-ghost" type="button" data-access-cancel>Abbrechen</button>
-          </div>
-        </form>
-      </div>
-    `;
+  const contactForm = document.querySelector("[data-contact-form]");
+  if (contactForm) {
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
 
-    document.body.appendChild(modal);
-    return modal;
+      const formData = new FormData(contactForm);
+      const subject = encodeURIComponent("Kontaktanfrage Darkside Games");
+      const lines = [
+        `Name: ${formData.get("name") || ""}`,
+        `E-Mail: ${formData.get("email") || ""}`,
+        `Telefon: ${formData.get("phone") || ""}`,
+        `Anfrage: ${formData.get("topic") || ""}`,
+        `Gruppengroesse: ${formData.get("groupSize") || ""}`,
+        "",
+        "Nachricht:",
+        formData.get("message") || "",
+      ];
+      const body = encodeURIComponent(lines.join("\n"));
+
+      window.location.href = `mailto:kd.digitalproduction@gmail.com?subject=${subject}&body=${body}`;
+    });
+  }
+
+  if (productFilter && productCards.length) {
+    const typeButtons = productFilter.querySelectorAll("[data-filter-type]");
+    const playerSelect = productFilter.querySelector("[data-filter-players]");
+
+    function matchesPlayers(card, value) {
+      const min = Number(card.dataset.playersMin);
+      const max = Number(card.dataset.playersMax);
+
+      if (value === "small") {
+        return min <= 6;
+      }
+
+      if (value === "medium") {
+        return max >= 7 && min <= 8;
+      }
+
+      if (value === "large") {
+        return max >= 9;
+      }
+
+      return true;
+    }
+
+    function applyProductFilters() {
+      const activeType = productFilter.querySelector(".filter-button.is-active")?.dataset.filterType || "all";
+      const players = playerSelect?.value || "all";
+
+      productCards.forEach((card) => {
+        const types = (card.dataset.type || "").split(" ");
+        const typeMatch = activeType === "all" || types.includes(activeType);
+        const playersMatch = matchesPlayers(card, players);
+        card.hidden = !(typeMatch && playersMatch);
+      });
+    }
+
+    typeButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        typeButtons.forEach((item) => item.classList.remove("is-active"));
+        button.classList.add("is-active");
+        applyProductFilters();
+      });
+    });
+
+    playerSelect?.addEventListener("change", applyProductFilters);
   }
 });

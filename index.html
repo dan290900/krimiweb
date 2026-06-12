@@ -3,30 +3,192 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#09131f" />
-    <title>Darkside | Premium Spiel-Erlebnisse</title>
+    <meta name="theme-color" content="#000000" />
+    <title>Darkside Games </title>
     <meta
       name="description"
-      content="Intro-Seite für deine Premium-Marke für Spieleabende, Rollenwelten und interaktive Eventformate."
+      content="Darkside Games entwickelt Krimi-Dinner und interaktive Storyspiele fuer zuhause, Freunde, Familien und besondere Abende."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body data-page="company">
+  <body data-page="home">
     <div class="page-noise" aria-hidden="true"></div>
     <div class="page-gradient" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Darkside Games Startseite">
+        <span class="brand-mark"></span>
+        <span>Darkside Games</span>
+      </a>
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <div class="nav-dropdown">
+          <a href="produkte/index.html">Produkte</a>
+          <div class="nav-dropdown-menu" aria-label="Produktmenue">
+            <a href="produkte/index.html">Alle Spiele</a>
+            <a href="produkte/mis.html">Mord im Seehotel</a>
+            <a href="unterschrift/index.html">Die letzte Unterschrift</a>
+          </div>
+        </div>
+        <a href="ueber-uns/index.html">Wer sind wir</a>
+        <a class="nav-cta" href="kontakt/index.html">Kontakt</a>
+      </nav>
+    </header>
+
     <main>
-      <section class="hero" data-reveal>
-        <div class="hero-copy">
-          <p class="eyebrow">Mystery Event Design</p>
-          <h1>DARKSIDE</h1>
-          <p class="hero-subtitle">
-            <h2>Coming soon...</h2>
+      <section class="product-hero" data-reveal>
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/darkside-hero.png" alt="" />
+        </div>
+
+        <div class="product-hero-copy">
+          <p class="eyebrow">Krimidinner &amp; Storyspiele</p>
+          <h1>Spieleabende neu erleben</h1>
+          <p class="hero-text">
+            Unsere Krimidinner verbinden Rollen, Hinweise, Videos und digitale
+            Begleitung zu einem Abend voller Verdacht, Diskussionen und Wendungen.
           </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="produkte/index.html">Spiele entdecken</a>
+            <a class="button button-ghost" href="#so-funktionierts">Wie läuft ein Krimidinner ab?</a>
+          </div>
+        </div>
+
+        <div class="floating-system" aria-hidden="true">
+          <div class="float-card float-card-a">
+            <span>Rollen</span>
+            <strong>Geheime Motive</strong>
+          </div>
+          <div class="float-card float-card-b">
+            <span>Spielabend</span>
+            <strong>Freunde + Familie</strong>
+          </div>
+          <div class="float-chip float-chip-a">Hinweise</div>
+          <div class="float-chip float-chip-b">Video</div>
+          <div class="float-line float-line-a"></div>
+          <div class="float-line float-line-b"></div>
         </div>
       </section>
+
+      <section class="product-led-section" id="spiele">
+        <div class="section-heading product-heading" data-reveal>
+          <p class="eyebrow">Unsere Spiele</p>
+          <h2>Zwei Fälle. Viele Geheimnisse.</h2>
+          <p>
+            Unsere Spiele sind für jeden gemacht. Aktuell bieten wir zwei Krimi-Dinner an, bei denen ihr in verschiedene Rollen schlüpft und gemeinsam einen mysteriösen Fall löst. Digitale Rollenhefte, interaktive Inhalte und ein durchdachter Spielablauf sorgen für ein unkompliziertes und einzigartiges Spielerlebnis.
+          </p>
+        </div>
+
+        <div class="product-showcase">
+          <article class="product-feature-card" data-reveal>
+            <div>
+              <span class="product-kicker">Krimidinner</span>
+              <h3>Mord im Seehotel</h3>
+              <p>
+                Ein eleganter Fall an der Ostsee mit spannender Familienkonstellation. Geeignet für Gruppen, die eine ausgelichende Schwierigkeit bevorzugen.
+              </p>
+            </div>
+            <ul class="product-tags" aria-label="Spielmerkmale">
+              <li>Gruppenspiel</li>
+              <li>Familiendrama</li>
+              <li>Digitale Inhalte</li>
+            </ul>
+            <a class="button button-primary" href="produkte/mis.html">Spiel ansehen</a>
+          </article>
+
+          <article class="product-feature-card" data-reveal>
+            <div>
+              <span class="product-kicker">Krimidinner</span>
+              <h3>Die letzte Unterschrift</h3>
+              <p>
+                Ein Fall der eine jahrzehntelange Vorgeschichte mit sich bringt. Besonders geeignet für Gruppen, die es gerne ein wenig schwieriger mögen.
+              </p>
+            </div>
+            <ul class="product-tags" aria-label="Spielmerkmale">
+              <li>Gruppenspiel</li>
+              <li>Verstrickte Vorgeschichte</li>
+              <li>Digitale Inhalte</li>
+            </ul>
+            <a class="button button-primary" href="unterschrift/index.html">Spiel ansehen</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="platform-section" id="so-funktionierts">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">So funktioniert ein Krimidinner von uns</p>
+          <h2>Buch bestellen, Rollen verteilen, losspielen.</h2>
+        </div>
+        <div class="module-grid">
+          <article data-reveal>
+            <span>01</span>
+            <h3>Spiel aussuchen</h3>
+            <p>Wählt den Fall, der zu eurer Gruppe und eurem Abend passt.</p>
+          </article>
+          <article data-reveal>
+            <span>02</span>
+            <h3>Rollen verteilen</h3>
+            <p>Jede Person bekommt ihre eigene Rollen-Website mit geheimen Infos.</p>
+          </article>
+          <article data-reveal>
+            <span>03</span>
+            <h3>Runden spielen</h3>
+            <p>Videos, Hinweise und neue Informationen führen euch durch den Fall.</p>
+          </article>
+          <article data-reveal>
+            <span>04</span>
+            <h3>Auflösen</h3>
+            <p>Am Ende wird diskutiert, abgestimmt und die Wahrheit aufgedeckt.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="studio-section" id="ueber-uns">
+        <div class="section-copy" data-reveal>
+          <p class="eyebrow">Wer wir sind</p>
+          <h2>Wir entwickeln Spiele für Menschen, die gemeinsam mehr erleben möchten.</h2>
+          <p>
+            Unsere Mission ist es, die Grenzen klassischer Gesellschaftsspiele zu überwinden. Durch digitale  schaffen wir mehr Inhalte, mehr Möglichkeiten und bessere Spielerlebnisse für alle.
+          </p>
+          <a class="button button-ghost" href="ueber-uns/index.html">Mehr über uns</a>
+        </div>
+        <div class="studio-metrics" data-reveal>
+          <div>
+            <strong>2</strong>
+            <span>spielbare Fälle</span>
+          </div>
+          <div>
+            <strong>3</strong>
+            <span>Runden pro Spiel</span>
+          </div>
+          <div>
+            <strong>1</strong>
+            <span>gemeinsamer Abend</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section" data-reveal>
+        <p class="eyebrow">Kontakt</p>
+        <h2>Fragen zu einem Spiel oder zu eurer Runde?</h2>
+        <p>
+          Schreibt uns, wenn ihr vor dem Kauf Fragen habt, Hilfe beim Spielabend
+          braucht oder wissen wollt, welcher Fall zu eurer Gruppe passt.
+        </p>
+        <a class="button button-primary" href="kontakt/index.html">Kontakt aufnehmen</a>
+      </section>
     </main>
-        <footer class="footer">
-      <p><a href="impressum/index.html" style="color:var(--muted);text-decoration:none;">Impressum</a></p>
+
+    <footer class="footer">
+      <p>Darkside Games</p>
+      <p>
+        <a href="impressum/index.html">Impressum</a>
+        <span aria-hidden="true">/</span>
+        <a href="produkte/index.html">Produkte</a>
+        <span aria-hidden="true">/</span>
+        <a href="ueber-uns/index.html">Wer sind wir</a>
+        <span aria-hidden="true">/</span>
+        <a href="kontakt/index.html">Kontakt</a>
+      </p>
     </footer>
 
     <script src="script.js"></script>

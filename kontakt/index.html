@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071017" />
+    <title>Kontakt | Darkside Games</title>
+    <meta
+      name="description"
+      content="Kontaktformular fuer Fragen zu Darkside Games, Krimi-Dinnern, Spielabenden und passenden Faellen fuer eure Gruppe."
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body data-page="contact">
+    <div class="page-noise" aria-hidden="true"></div>
+    <div class="page-gradient" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Darkside Games Startseite">
+        <span class="brand-mark"></span>
+        <span>Darkside Games</span>
+      </a>
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <div class="nav-dropdown">
+          <a href="../produkte/index.html">Produkte</a>
+          <div class="nav-dropdown-menu" aria-label="Produktmenue">
+            <a href="../produkte/index.html">Alle Spiele</a>
+            <a href="../produkte/mis.html">Mord im Seehotel</a>
+            <a href="../unterschrift/index.html">Die letzte Unterschrift</a>
+          </div>
+        </div>
+        <a href="../ueber-uns/index.html">Wer sind wir</a>
+        <a class="nav-cta" href="../kontakt/index.html">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-hero" data-reveal>
+        <div class="contact-hero-copy">
+          <p class="eyebrow">Kontakt</p>
+          <h1>Fragen zu eurem Spieleabend?</h1>
+          <p class="hero-text">
+            Ob vor dem Kauf, bei der Vorbereitung oder waehrend der Planung:
+            Schreibt uns kurz, welcher Fall euch interessiert und wie gross eure Gruppe ist.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-layout">
+        <aside class="contact-card" data-reveal>
+          <p class="eyebrow">Direkt</p>
+          <h2>Kontaktwege</h2>
+          <div class="contact-method">
+            <strong>E-Mail</strong>
+            <a href="mailto:kd.digitalproduction@gmail.com">kd.digitalproduction@gmail.com</a>
+          </div>
+          <div class="contact-method">
+            <strong>Fuer schnelle Rückmeldung</strong>
+            <p>Bitte Gruppengroesse, Anlass und den gewuenschten Fall nennen.</p>
+          </div>
+        </aside>
+
+        <form class="contact-form" data-contact-form data-reveal>
+          <div class="form-grid">
+            <label class="form-field">
+              <span>Name</span>
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+            <label class="form-field">
+              <span>E-Mail</span>
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label class="form-field">
+              <span>Telefon</span>
+              <input name="phone" type="tel" autocomplete="tel" />
+            </label>
+            <label class="form-field">
+              <span>Anfrage</span>
+              <select name="topic" required>
+                <option value="">Bitte auswählen</option>
+                <option>Frage vor dem Kauf</option>
+                <option>Hilfe beim Spielabend</option>
+                <option>Mord im Seehotel</option>
+                <option>Die letzte Unterschrift</option>
+                <option>Allgemeine Frage</option>
+              </select>
+            </label>
+            <label class="form-field full">
+              <span>Gruppengröße</span>
+              <input name="groupSize" type="text" placeholder="z. B. 6 Personen, Geburtstag, Urlaub, Familienabend" />
+            </label>
+            <label class="form-field full">
+              <span>Nachricht</span>
+              <textarea name="message" required placeholder="Welcher Fall interessiert euch und wobei können wir helfen?"></textarea>
+            </label>
+          </div>
+          <p class="form-note">
+            Beim Absenden öffnet sich dein E-Mail-Programm mit einer vorbereiteten Nachricht.
+          </p>
+          <button class="button button-primary" type="submit">Anfrage senden</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Darkside Games</p>
+      <p>
+        <a href="../index.html">Startseite</a>
+        <span aria-hidden="true">/</span>
+        <a href="../produkte/index.html">Produkte</a>
+        <span aria-hidden="true">/</span>
+        <a href="../ueber-uns/index.html">Wer sind wir</a>
+        <span aria-hidden="true">/</span>
+        <a href="../impressum/index.html">Impressum</a>
+      </p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -11,11 +11,23 @@
     <div class="page-noise" aria-hidden="true"></div>
     <div class="page-gradient" aria-hidden="true"></div>
 
-    <header class="topbar">
-      <a class="brand" href="../index.html">
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Darkside Games Startseite">
         <span class="brand-mark"></span>
         <span>Darkside Games</span>
       </a>
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <div class="nav-dropdown">
+          <a href="../produkte/index.html">Produkte</a>
+          <div class="nav-dropdown-menu" aria-label="Produktmenue">
+            <a href="../produkte/index.html">Alle Spiele</a>
+            <a href="../produkte/mis.html">Mord im Seehotel</a>
+            <a href="../unterschrift/index.html">Die letzte Unterschrift</a>
+          </div>
+        </div>
+        <a href="../ueber-uns/index.html">Wer sind wir</a>
+        <a class="nav-cta" href="../kontakt/index.html">Kontakt</a>
+      </nav>
     </header>
 
     <main>
@@ -38,7 +50,15 @@
     </main>
 
     <footer class="footer">
-      <p><a href="../index.html" style="color:var(--muted);text-decoration:none;">← Zurück</a></p>
+      <p>
+        <a href="../index.html">Startseite</a>
+        <span aria-hidden="true">/</span>
+        <a href="../produkte/index.html">Produkte</a>
+        <span aria-hidden="true">/</span>
+        <a href="../ueber-uns/index.html">Wer sind wir</a>
+        <span aria-hidden="true">/</span>
+        <a href="../kontakt/index.html">Kontakt</a>
+      </p>
     </footer>
 
     <script src="../script.js"></script>

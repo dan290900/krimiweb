@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <title>Produkte | Darkside Games</title>
+    <meta
+      name="description"
+      content="Alle Krimidinner von Darkside Games mit Personenanzahl und Filter."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="produkte.css" />
+  </head>
+  <body data-page="products">
+    <div class="page-noise" aria-hidden="true"></div>
+    <div class="page-gradient" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Darkside Games Startseite">
+        <span class="brand-mark"></span>
+        <span>Darkside Games</span>
+      </a>
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <div class="nav-dropdown">
+          <a href="../produkte/index.html">Produkte</a>
+          <div class="nav-dropdown-menu" aria-label="Produktmenue">
+            <a href="../produkte/index.html">Alle Spiele</a>
+            <a href="mis.html">Mord im Seehotel</a>
+            <a href="../unterschrift/index.html">Die letzte Unterschrift</a>
+          </div>
+        </div>
+        <a href="../ueber-uns/index.html">Wer sind wir</a>
+        <a class="nav-cta" href="../kontakt/index.html">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="subpage-hero" data-reveal>
+        <p class="eyebrow">Produkte</p>
+        <h1>Unsere Krimidinner.</h1>
+        <p class="hero-text">
+          Wählt den Fall, der zu eurer Gruppe passt. Die Liste wird erweitert,
+          sobald neue Spiele veroeffentlicht werden.
+        </p>
+      </section>
+
+      <section class="product-filter-section" data-reveal>
+        <div class="filter-bar" data-product-filter>
+          <button class="filter-button is-active" type="button" data-filter-type="all">Alle Spiele</button>
+          <button class="filter-button" type="button" data-filter-type="krimidinner">Krimidinner</button>
+          <label class="filter-select-label">
+            Personenanzahl
+            <select data-filter-players>
+              <option value="all">Alle Gruppen</option>
+              <option value="small">Bis 5 Personen</option>
+              <option value="medium">6 bis 8 Personen</option>
+              <option value="large">9+ Personen</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section class="product-list" aria-label="Produktliste">
+        <article class="product-list-card" data-reveal data-product-card data-type="krimidinner" data-players-min="6" data-players-max="8">
+          <figure class="product-list-image">
+            <img src="../assets/Produktbild_mis_schwarz.png" alt="Produktbild zu Mord im Seehotel" />
+          </figure>
+          <div>
+            <span class="product-kicker">Krimidinner</span>
+            <h2>Mord im Seehotel</h2>
+            <p>
+              Ein eleganter Fall an der Ostsee mit geheimen Rollen, Video-Intro,
+              Hinweisen und mehreren Spielrunden.
+            </p>
+          </div>
+          <dl class="product-properties">
+            <div>
+              <dt>Typ</dt>
+              <dd>Krimidinner</dd>
+            </div>
+            <div>
+              <dt>Personenanzahl</dt>
+              <dd>6-8 Personen</dd>
+            </div>
+          </dl>
+          <a class="button button-primary" href="mis.html">Spiel ansehen</a>
+        </article>
+
+        <article class="product-list-card" data-reveal data-product-card data-type="krimidinner" data-players-min="6" data-players-max="8">
+          <figure class="product-list-image product-list-image-placeholder">
+            <img src="../assets/darkside-hero.png" alt="Produktbild zu Die letzte Unterschrift" />
+          </figure>
+          <div>
+            <span class="product-kicker">Krimidinner</span>
+            <h2>Die letzte Unterschrift</h2>
+            <p>
+              Ein Fall voller Geheimnisse, Entscheidungen und Machtspiele.
+              Besonders passend fuer Gruppen, die gerne diskutieren.
+            </p>
+          </div>
+          <dl class="product-properties">
+            <div>
+              <dt>Typ</dt>
+              <dd>Krimidinner</dd>
+            </div>
+            <div>
+              <dt>Personenanzahl</dt>
+              <dd>6-8 Personen</dd>
+            </div>
+          </dl>
+          <a class="button button-primary" href="../unterschrift/index.html">Spiel ansehen</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Darkside Games</p>
+      <p>
+        <a href="../impressum/index.html">Impressum</a>
+        <span aria-hidden="true">/</span>
+        <a href="../ueber-uns/index.html">Wer sind wir</a>
+        <span aria-hidden="true">/</span>
+        <a href="../kontakt/index.html">Kontakt</a>
+      </p>
+    </footer>
+
+    <script src="produkte.js"></script>
+  </body>
+</html>
