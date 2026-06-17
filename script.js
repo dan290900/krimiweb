@@ -199,9 +199,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const lines = [
         `Name: ${formData.get("name") || ""}`,
         `E-Mail: ${formData.get("email") || ""}`,
-        `Telefon: ${formData.get("phone") || ""}`,
         `Anfrage: ${formData.get("topic") || ""}`,
-        `Gruppengroesse: ${formData.get("groupSize") || ""}`,
+        `Betreff: ${formData.get("inquirySubject") || ""}`,
         "",
         "Nachricht:",
         formData.get("message") || "",
