@@ -74,8 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
       item.setAttribute("role", "button");
       item.setAttribute("aria-label", "Bild vergrößern");
 
-      item.addEventListener("click", () => {
-        const image = item.querySelector("img");
+      item.addEventListener("click", (event) => {
+        const image = event.target.closest("img") || item.querySelector("img");
         if (image) {
           openLightbox(image);
         }
