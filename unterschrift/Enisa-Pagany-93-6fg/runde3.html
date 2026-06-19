@@ -6,21 +6,27 @@
     <meta name="theme-color" content="#000000" />
     <title>Enisa Pagany | Runde 3</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Inhalt ab "Das Ziel der ersten Runde" zentrieren (nur Runde 1) */
+      .runde-sections { text-align: center; }
+      .runde-sections .runde-map { margin-left: auto; margin-right: auto; }
+      .runde-sections .runde-section { margin-inline: auto; }
+    </style>
   </head>
   <body class="locked-view" data-page="round" data-round="3" data-role="Enisa Pagany">
     <div class="page-noise" aria-hidden="true"></div>
     <div class="page-gradient" aria-hidden="true"></div>
 
     <header class="topbar">
-      <a class="brand" href="index.html">
+      <a class="brand" href="https://www.darkside-games.de">
         <span class="brand-mark"></span>
         <span>Darkside Games</span>
       </a>
       <div class="phase-pills" aria-label="Spielphasen">
         <a class="phase-pill" href="index.html">Start</a>
-        <a class="phase-pill" href="runde1.html" data-protected-link="runde1">Runde 1</a>
+        <a class="phase-pill" href="runde1.html">Runde 1</a>
         <a class="phase-pill" href="runde2.html" data-protected-link="runde2">Runde 2</a>
-        <a class="phase-pill is-current" href="runde3.html">Runde 3</a>
+        <a class="phase-pill is-current" href="runde3.html" data-protected-link="runde3">Runde 3</a>
       </div>
     </header>
 
@@ -30,7 +36,7 @@
         <div class="runde-hero-copy">
           <div class="round-badge">Runde 3</div>
           <h1>Konfrontation</h1>
-          <p class="runde-subtitle">Der Moment der Wahrheit. Geheimnisse kommen ans Licht – nutze alles, was du weißt.</p>
+          <p class="runde-subtitle">Der Moment der Wahrheit. Geheimnisse kommen ans Licht. Nutze alles, was du weißt.</p>
         </div>
         <div class="runde-portrait">
           <img src="../images/Enisa_Pagany.png" alt="Enisa Pagany" onerror="this.style.display='none'" />
@@ -41,45 +47,57 @@
 
         <div class="runde-section" data-reveal>
           <p class="runde-section-title">Das Ziel der dritten Runde</p>
-          <p>Du hast Jake gezielt beeinflusst und damit den Plan ins Rollen gebracht. Jetzt droht alles aufzufliegen. Du musst verhindern, dass deine Rolle sichtbar wird. Gleichzeitig kannst du das Spiel noch lenken. Entscheide, wen du schützt – und wen du fallen lässt. Sorge dafür, dass der Verdacht nicht bei dir endet. </p>
+          <p>Verhindere, dass deine Rolle bei Jakes Beeinflussung sichtbar wird. Entscheide gleichzeitig, ob du Diana belastest oder schützt, damit der Verdacht nicht am Ende bei dir oder Jake landet.</p>
+        </div>
+
+        <div class="runde-section" data-reveal>
+          <p class="runde-section-title">Deine Ausgangslage</p>
+          <p>Du weißt inzwischen, dass Jake gezielt beeinflusst wurde und du selbst dabei eine wichtige Rolle gespielt hast. Diana hat dich unter Druck gesetzt, doch nun besitzt du etwas, das sie belasten kann. Michael hat außerdem ein Wort genannt, das nur jemand kennen kann, der mit Jakes Vergangenheit verbunden ist. Du musst entscheiden, wem du noch vertrauen kannst.</p>
         </div>
 
         <div class="runde-section" data-reveal>
           <p class="runde-section-title">Dein Beweis</p>
-          <p>Du hast für den Fall der Fälle einen Beweis. der Diana belasten kann. Nutze ihn, um sie nach ihrem Verrat an dir auffliegen zu lassen. Du kannst deinen Beweis früh einsetzen, oder den richtigen Moment abwarten.</p>
+          <p>Dein Beweis ist ab Beginn dieser Runde verfügbar. Du kannst ihn sofort einsetzen oder auf den richtigen Moment warten. Er belastet Diana und zeigt, dass sie dich unter Druck gesetzt hat. Nutze ihn, wenn Diana dich verraten will oder der Verdacht zu stark auf dich fällt.</p>
         </div>
 
         <div class="runde-section" data-reveal>
           <p class="runde-section-title">Deine Geheimnisse</p>
-          <p> <b>1. Verrat an der Therapie:</b> Du hast Jakes intimste Geständnisse über seine dunkle Vergangenheit heimlich an Diana weitergegeben. Diana wollte Jake im Unternehmen und brachte Luisa dazu, ihn ins Unternehmen zu holen.
-          </p>
-          <p> <b>2. Todesangst:</b> Michael nannte ein Wort, das sich als Schlüssel zu Jakes verschatteter Vergangenheit erwies. Nur jemand, der in Kolumbien 1996 dabei war, konnte von dieser Tatsache wissen. 
-          </p>
+          <p><b>1. Verrat an der Therapie:</b> Du hast Jakes intimste Geständnisse über seine Vergangenheit heimlich an Diana weitergegeben. Diana wollte Jake bei Stahlmann & Faust und brachte Luisa dazu, ihn ins Unternehmen zu holen.</p>
+          <p><b>2. Todesangst:</b> Michael hat ein Wort genannt, das mit Jakes Vergangenheit in Kolumbien im Jahr 1996 verbunden ist. Nur jemand, der damals dabei war, kann diese Tatsache kennen.</p>
         </div>
 
         <div class="runde-section" data-reveal>
-          <p class="runde-section-title">Deine Missionen in der dritten Runde</p>
-          <p> <b>1. Selbsterhaltung:</b> Lasse die anderen wissen, dass du zu bestimmten Handlungen gezwungen wurdest, und lenke den Verdacht schrittweise auf Eric. Du findest ihn unsympathisch und willst ihn opfern. Das Alibi, das er vorlegt, lässt du als manipulierten Betrugsversuch dastehen.</p>
-          <p> <b>2. Du stehst unter massivem Druck:</b> Du entscheidest selbst, wie viel du preisgibst und wen du schützt.</p>
+          <p class="runde-section-title">Deine Mission</p>
+          <p><b>1. Selbsterhaltung:</b> Lass vorsichtig erkennen, dass du zu bestimmten Handlungen gezwungen wurdest. Lenke den Verdacht schrittweise auf Eric und stelle sein Alibi als möglichen Manipulationsversuch dar.</p>
+          <p><b>2. Kontrolle behalten:</b> Entscheide selbst, wie viel du preisgibst und wen du schützt. Nutze deinen Beweis gegen Diana, wenn sie dich unter Druck setzt oder sich gegen dich stellt.</p>
         </div>
 
         <div class="runde-section" data-reveal>
-          <p class="runde-section-title">Beispielfragen</p>
-          <p><b>1. An Luisa:</b> „War es eigentlich deine Idee, Jake abzuwerben, oder kam der Impuls von oben?“</p>
-          <p><b>2. An Jake:</b> „Wie kam es damals zur Einladung zu Mainmetall? Hattest du den Eindruck, dass das eine gewöhnliche Abwerbung war?“</p>
+          <p class="runde-section-title">Deine Erinnerung an 19.40 Uhr</p>
+          <img class="runde-map" src="../images/map_r3_ep.jpg" alt="Enisa Pagany — zum Vergrößern tippen" data-zoomable onerror="this.style.display='none'" />
+          <p class="runde-map-hint">Zum Vergrößern tippen</p>
+          <p> Du stehst nahe bei Jake vor dem Panzer. Kurz vor dem Blackout siehst du eine Person auf ihn zulaufen. Dann schreit jemand auf. Als das Licht zurückkehrt, liegt Cole Silverman tot am Boden. Nur Eric und Diego sind nicht bei der Präsentation.</p>
         </div>
+
+        <div class="runde-section" data-reveal>
+          <p class="runde-section-title">Mögliche Fragen</p>
+          <p><b>An Luisa:</b> „War es eigentlich deine Idee, Jake abzuwerben, oder kam der Impuls von oben?“</p>
+          <p><b>An Jake:</b> „Wie kam es damals zur Einladung zu Stahlmann & Faust? Hattest du den Eindruck, dass das eine gewöhnliche Abwerbung war?“</p>
+          <p><b>An Eric:</b> „Warum sollte dein Alibi glaubwürdiger sein als die Aussagen der anderen hier?“</p>
+        </div>
+
 
       </div>
 
       <nav class="page-nav" aria-label="Seitennavigation" data-reveal>
-        <a class="button button-ghost" href="index.html">Zurück zur Startseite</a>
-        <a class="button button-primary" href="index.html"> <b>Zur Rollenübersicht</b></a>
+        <a class="button button-ghost" href="https://www.darkside-games.de">Zu unserer Website</a>
+        <a class="button button-primary" href="https://www.amazon.de/review/create-review/?ie=UTF8&channel=glance-detail&asin=B0H41N1561"><b>Bewerte uns auf Amazon :)</b></a>
       </nav>
 
     </main>
 
-        <footer class="footer">
-      <p><a href="../../impressum/index.html" ><em>@Impressum</em></a></p>
+    <footer class="footer">
+      <p><a href="../../impressum/index.html">@Impressum</a></p>
     </footer>
 
     <script src="script.js"></script>

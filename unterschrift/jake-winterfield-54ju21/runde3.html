@@ -6,21 +6,27 @@
     <meta name="theme-color" content="#000000" />
     <title>Jake Winterfield | Runde 3</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Inhalt ab "Das Ziel der ersten Runde" zentrieren (nur Runde 1) */
+      .runde-sections { text-align: center; }
+      .runde-sections .runde-map { margin-left: auto; margin-right: auto; }
+      .runde-sections .runde-section { margin-inline: auto; }
+    </style>
   </head>
   <body class="locked-view" data-page="round" data-round="3" data-role="Jake Winterfield">
     <div class="page-noise" aria-hidden="true"></div>
     <div class="page-gradient" aria-hidden="true"></div>
 
     <header class="topbar">
-      <a class="brand" href="index.html">
+      <a class="brand" href="https://www.darkside-games.de">
         <span class="brand-mark"></span>
         <span>Darkside Games</span>
       </a>
       <div class="phase-pills" aria-label="Spielphasen">
         <a class="phase-pill" href="index.html">Start</a>
-        <a class="phase-pill" href="runde1.html" data-protected-link="runde1">Runde 1</a>
+        <a class="phase-pill" href="runde1.html">Runde 1</a>
         <a class="phase-pill" href="runde2.html" data-protected-link="runde2">Runde 2</a>
-        <a class="phase-pill is-current" href="runde3.html">Runde 3</a>
+        <a class="phase-pill is-current" href="runde3.html" data-protected-link="runde3">Runde 3</a>
       </div>
     </header>
 
@@ -30,7 +36,7 @@
         <div class="runde-hero-copy">
           <div class="round-badge">Runde 3</div>
           <h1>Konfrontation</h1>
-          <p class="runde-subtitle">Der Moment der Wahrheit. Geheimnisse kommen ans Licht – nutze alles, was du weißt.</p>
+          <p class="runde-subtitle">Der Moment der Wahrheit. Geheimnisse kommen ans Licht. Nutze alles, was du weißt.</p>
         </div>
         <div class="runde-portrait">
           <img src="../images/Jake_Winterfield.png" alt="Jake Winterfield" onerror="this.style.display='none'" />
@@ -41,43 +47,56 @@
 
         <div class="runde-section" data-reveal>
           <p class="runde-section-title">Das Ziel der dritten Runde</p>
-          <p>Brich Michaels Fassade. Er weiß mehr, als er sagt. Zwing ihn zu einem Fehler. Du bist nicht mehr nur Verdächtiger. Du bist derjenige, der das Spiel drehen kann.</p>
+          <p>Brich Michaels Fassade. Finde heraus, woher er Informationen über deine Vergangenheit aus dem Jahr 1996 hat, und verhindere gleichzeitig, dass deine damalige Rolle gegen dich verwendet wird.</p>
         </div>
+
+        <div class="runde-section" data-reveal>
+          <p class="runde-section-title">Deine Ausgangslage</p>
+          <p>Michael hat Informationen über deine Einheit und den Einsatz von 1996 erwähnt, die niemals öffentlich bekannt waren. Dadurch erkennst du ein Muster: Die Gäste, deine Einstellung bei Stahlmann & Faust und dieser Abend wurden offenbar gezielt vorbereitet. Du warst nicht der Täter, sondern möglicherweise das eigentliche Ziel.</p>
+        </div>
+
         <div class="runde-section" data-reveal>
           <p class="runde-section-title">Dein Beweis</p>
-          <p>Etwa 10 Minuten nach Beginn der zweiten Runde erhältst auch du einen starken Beweis. Er wird dir von der Polizei gebracht, du weißt nicht, was drinsteht. Öffne ihn, wenn du denkst, dass die Zeit reif ist. </p>
+          <p>Nach etwa 10 Minuten in der dritten Runde erhältst du einen Beweis von der Polizei. Du weißt nicht, was sich darin befindet. Öffne ihn erst, wenn du denkst, dass der richtige Zeitpunkt gekommen ist, und lies ihn anschließend allen vor.</p>
         </div>
 
         <div class="runde-section" data-reveal>
           <p class="runde-section-title">Deine Geheimnisse</p>
-          <p> <b>1. Das Jahr 1996 wird zur Waffe gegen dich</b>  Michael hat Informationen genannt, die nur jemand kennen kann, der über deine Spezialoperation gegen ein kolumbianisches Kartell im Jahr 1996 Bescheid weiß. Details über Grenzen, die du damals überschritten hast. Er nannte ganz beiläufig die 110. Einheit, deren Kommandeur du warst. Eigentlich gab es nur einen einzigen Augenzeugen, dem die Flucht gelang und der diese Wahrheit kannte. Sitzt er heute mit dir an diesem Tisch?</p>
-          <p> <b>2. Du erkennst ein Muster:</b> Menschen wurden gezielt zusammengebracht, Entscheidungen waren kein Zufall und Beziehungen wurden bewusst aufgebaut. Du warst nicht der Täter, sondern das eigentliche Ziel dieses Abends.</p>
+          <p><b>1. Das Jahr 1996:</b> Michael kennt Details über deine Spezialeinheit und den Einsatz gegen ein kolumbianisches Kartell. Eigentlich gab es nur einen Augenzeugen, der diese Wahrheit kennen konnte. Vielleicht sitzt er heute mit dir am Tisch.</p>
+          <p><b>2. Du warst das Ziel:</b> Menschen wurden gezielt zusammengebracht, Entscheidungen beeinflusst und Beziehungen aufgebaut. Du warst nicht für Coles Tod verantwortlich, aber dieser Abend scheint geplant worden zu sein, um dich unter Druck zu setzen.</p>
         </div>
 
         <div class="runde-section" data-reveal>
-          <p class="runde-section-title">Deine Missionen in der dritten Runde</p>
-          <p> <b>1.</b> Michael wirkt verdächtig. Bringe ihn zu einem Informationsfehler: Zu viel wissen, sich verplappern, ein Detail korrigieren, das er nicht kennen dürfte.</p>
-          <p> <b>2.</b> Coles Tod war nicht geplant und muss ein Unfall gewesen sein. Warst du das eigentliche Ziel? Stelle Fragen, die zeigen, dass du die Verantwortlichen durchschaust.</p>
+          <p class="runde-section-title">Deine Mission</p>
+          <p><b>1. Bring Michael zu einem Fehler:</b> Stelle gezielte Fragen zu 1996. Er soll sich verplappern, ein Detail korrigieren oder Wissen zeigen, das er nicht haben dürfte.</p>
+          <p><b>2. Stelle den Ablauf infrage:</b>  Du glaubst, dass Coles Tod nicht geplant war und dass eigentlich du getroffen werden solltest. Stelle Fragen, die zeigen, dass du die Zusammenhänge erkennst.</p>
         </div>
 
         <div class="runde-section" data-reveal>
-          <p class="runde-section-title">Beispielfragen</p>
-          <p><b>1. An Michael:</b> „Die 110. Einheit war nicht öffentlich bekannt. Woher hast du das?“</p>
-          <p><b>2. An Diana:</b> „Warum war Cole heute hier, stand er auf der Gästeliste?“</p>
-          <p><b>3. An Enisa:</b> „Du hast mich zu diesem Job gedrängt. War das deine Idee, oder hat dich jemand gebeten, das zu tun?“</p>
+          <p class="runde-section-title">Deine Erinnerung an 19.40 Uhr</p>
+          <img class="runde-map" src="../images/map_r3_jw.jpg" alt="Jake Winterfield — zum Vergrößern tippen" data-zoomable onerror="this.style.display='none'" />
+          <p class="runde-map-hint">Zum Vergrößern tippen</p>
+          <p> Du stehst nahe am Panzer, der nach langer Vorbereitung endlich präsentiert werden soll. Die Stimmung wirkt angespannt. Plötzlich wird es dunkel. Als das Licht zurückkehrt, liegt Cole Silverman am Boden. Alle anderen Verdächtigen sind in der Nähe, nur bei Diego und Eric weißt du nicht, wo sie während des Blackouts waren. </p>
         </div>
+
+        <div class="runde-section" data-reveal>
+          <p class="runde-section-title">Mögliche Fragen</p>
+          <p><b>An Michael:</b> „Die 110. Einheit war nicht öffentlich bekannt. Woher hast du das?“</p>
+          <p><b>An Enisa:</b> „Du hast mich zu diesem Job gedrängt. War das deine Idee oder hat dich jemand darum gebeten?“</p>
+        </div>
+
 
       </div>
 
       <nav class="page-nav" aria-label="Seitennavigation" data-reveal>
-        <a class="button button-ghost" href="index.html">Zurück zur Startseite</a>
-        <a class="button button-primary" href="index.html"> <b>Zur Rollenübersicht</b></a>
+        <a class="button button-ghost" href="https://www.darkside-games.de">Zu unserer Website</a>
+        <a class="button button-primary" href="https://www.amazon.de/review/create-review/?ie=UTF8&channel=glance-detail&asin=B0H41N1561" ><b>Bewerte uns auf Amazon :)</b></a>
       </nav>
 
     </main>
 
-        <footer class="footer">
-      <p><a href="../../impressum/index.html" ><em>@Impressum</em></a></p>
+    <footer class="footer">
+      <p><a href="../../impressum/index.html">@Impressum</a></p>
     </footer>
 
     <script src="script.js"></script>

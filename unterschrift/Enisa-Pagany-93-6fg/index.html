@@ -12,9 +12,9 @@
     <div class="page-gradient" aria-hidden="true"></div>
 
     <header class="topbar">
-      <a class="brand" href="index.html">
+      <a class="brand" href="https://www.darkside-games.de" target="_blank" rel="noopener">
         <span class="brand-mark"></span>
-        <span>Darkside Games</span>
+        <span>DARKSIDE GAMES</span>
       </a>
       <div class="phase-pills" aria-label="Spielphasen">
         <a class="phase-pill is-current" href="index.html">Start</a>
@@ -24,242 +24,285 @@
       </div>
     </header>
 
-    <main class="r1-main">
+    <main>
 
-      <!-- 1. Große Überschrift -->
-      <section class="r1-header" data-reveal>
-        <h1>Die letzte Unterschrift</h1>
+      <!-- 1. Überschrift der Rolle -->
+      <section class="nw-header" data-reveal>
+        <p class="nw-eyebrow">Darkside Games · Die letzte Unterschrift</p>
+        <h1 class="nw-title">Deine Rollenakte</h1>
       </section>
 
-      <!-- 2. Video -->
-      <section class="r1-video" data-reveal>
-        <p class="r1-header-sub">Intro Video — Gerne am Vorabend schauen, um optimal vorbereitet zu sein.</p>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/i35hPhZmOvY?si=oLlYlwHqvL1WF1j3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <!-- 4. Deine Rolle (Bild + Hinweise) -->
+      <section class="nw-role" data-reveal>
+        <div class="nw-role-card">
+
+          <div class="nw-role-img-wrap">
+            <div class="nw-role-img">
+              <img src="../images/Enisa_Pagany.png" alt="Enisa Pagany">
+              <span class="nw-placeholder-initials">E.P.</span>
+            </div>
+            <span class="nw-role-badge">Deine Rolle</span>
+          </div>
+
+          <div class="nw-role-content">
+            <h2 class="nw-role-name">Enisa Pagany</h2>
+            <p class="nw-role-subtitle">Therapeutin</p>
+
+            <p class="nw-role-desc">
+              Du bist Enisa Pagany, Therapeutin und enge Freundin von Jake Winterfield, weshalb du von Luisa Falkenberg zum morgigen Event der Stahlmann & Faust AG eingeladen wurdest. 
+            </p>
+            <p class="nw-role-desc">
+              Nach außen wirkst du ruhig, empathisch und professionell, doch hinter deiner Fassade ist dein Lebenslauf nicht ganz lupenrein. Einige berufliche Entscheidungen der vergangenen Jahre würden bei genauerem Hinsehen Fragen aufwerfen, denn du hast Dinge getan, von denen du wusstest, dass sie moralisch nicht vertretbar sind.
+            </p>
+            <p class="nw-role-desc">
+              Dann kommt der besagte Abend. Und mit ihm der Blackout. Als das Licht wieder angeht, ist der amerikanische Anwalt Cole Silverman tot.
+            </p>
+            <p class="nw-role-desc">
+              Dir wird klar, dass Diana, die dein berufliches Geheimnis kennt und dich erpresst, vielleicht mehr mit diesem Abend zu tun hat, als sie zugibt. 
+            </p>
+          </div>
+
         </div>
+
       </section>
 
-      <!-- Spiel starten -->
-      <div class="r1-start-banner" data-reveal>
-        <a class="button button-primary" href="runde1.html" data-protected-link="runde1"><b>Spiel starten</b></a>
-        <p>Erst drücken, wenn der Moderator das Spiel offiziell gestartet hat. Du erhältst dann das Passwort für jede Runde direkt vom Moderator.</p>
+      <!-- Video -->
+      <div class="nw-video" data-reveal>
+        <p class="nw-video-label">Introvideo: Schau es dir am Vortag an um vorbereitet zu sein</p>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/N7bApXobgzE?si=LepeKn4fClTZSYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       </div>
 
-      <!-- 3. Die 7 Charaktere -->
-      <section class="r1-characters">
-        <h2 class="r1-characters-title" data-reveal>Die Charaktere des Abends</h2>
-        <div class="r1-character-grid">
+      <!-- 5. Beziehungen -->
+      <section class="nw-relations" data-reveal>
+        <h2 class="nw-relations-title">Dein Blick auf die anderen</h2>
+        <div class="nw-relations-wrapper">
 
-          <div class="r1-character r1-character--self" data-reveal>
-            <h3 class="r1-char-name">Enisa Pagany</h3>
-            <div class="r1-char-img">
-              <img src="../images/Enisa_Pagany.png" alt="Charakter 1" onerror="this.style.display='none'" />
+          <button class="nw-arrow nw-arrow--left" id="arrowLeft" aria-label="Zurück scrollen">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div class="nw-relations-track" id="relationsTrack">
+
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                  <img src="../images/Diana_Seleznev.png" alt="Diana Seleznev">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">D.S.</span>
+              </div>
+              <p class="nw-char-name">Diana Seleznev</p>
+              <p class="nw-char-rel">ist deine größte Gefahr. Sie weiß, womit sie dich unter Druck setzen kann, und wird diesen Vorteil vermutlich weiter nutzen. Achte darauf, ob sie den Abend kontrolliert oder dich in eine bestimmte Richtung drängen will.</p>
             </div>
-            <p class="r1-char-detail-title">Spielhinweise</p>
-            <p class="r1-char-desc">Du bist eine Therapeutin mit perfekter Fassade. 
-                Seit Jahren quält dich dein Gewissen, weil du 
-                weißt, dass das Geld, das du verdienst, moralisch 
-                sehr verwerflich ist. Heute bist du als „enge 
-                Freundin“ und Therapeutin von Jake hier. Du 
-                darfst nicht lügen, aber Wahrheiten verschleiern. 
-                Versuche, immer professionell zu bleiben.
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                  <img src="../images/Zoe_Winterfield.png" alt="Zoe Winterfield">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">Z.W.</span>
+              </div>
+              <p class="nw-char-name">Zoe Winterfield</p>
+              <p class="nw-char-rel">  ist Jakes Ehefrau und Polizistin. Sie erkennt Widersprüche schnell und will Jake schützen. Versuche sie zu beruhigen, wenn sie ihn zu stark unter Druck setzt, ohne selbst zu vertraut oder zu informiert zu wirken.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                  <img src="../images/Jake_Winterfield.png" alt="Jake Winterfield">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">J.W.</span>
+              </div>
+              <p class="nw-char-name">Jake Winterfield</p>
+              <p class="nw-char-rel">  ist dein Patient und Freund. Du hast ihn über Jahre begleitet, aber nicht alles, was du getan hast, war frei von äußerem Einfluss. Du fühlst dich schuldig, willst ihn schützen und darfst nicht zeigen, wie stark dich seine Situation betrifft.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                 <img src="../images/Diego_Diaz.png" alt="Diego Diaz">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">D.D.</span>
+              </div>
+              <p class="nw-char-name">Diego Diaz</p>
+              <p class="nw-char-rel"> st als externer Sicherheitsmann anwesend, wirkt aber ungewöhnlich distanziert und schwer einschätzbar. Beobachte, weshalb er sich so stark für den Ablauf, die Kontrolle des Raums und die Reaktionen der Gäste interessiert.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                 <img src="../images/Luisa_Falkenberg.png" alt="Luisa Falkenberg">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">L.F.</span>
+              </div>
+              <p class="nw-char-name">Luisa Falkenberg</p>
+              <p class="nw-char-rel">ist Regionalleiterin bei Stahlmann & Faust und eine wichtige Gastgeberin. Achte darauf, ob sie mehr über Jake, Diana oder die Vorbereitung des Abends weiß, als sie offen sagt.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                  <img src="../images/Eric_Dumont.png" alt="Eric Dumont">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">E.D.</span>
+              </div>
+              <p class="nw-char-name">Eric Dumont</p>
+              <p class="nw-char-rel"> war für Ablauf und Technik verantwortlich. Da der Mord während des Blackouts geschieht, solltest du genau darauf achten, ob er den Ausfall wirklich erklären kann.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                 <img src="../images/Michael_Silber.png" alt="Michael Silber">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">M.S.</span>
+              </div>
+              <p class="nw-char-name">Michael Silber</p>
+              <p class="nw-char-rel">  wirkt seriös und charismatisch, doch du traust ihm nicht. Versuche zu erkennen, ob er eine Gefahr für dich darstellt oder mehr über den Abend weiß, als er zugibt.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                 <img src="../images/Cole_Silverman.png" alt="Cole Silverman">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">C.S.</span>
+              </div>
+              <p class="nw-char-name">Cole Silverman</p>
+              <p class="nw-char-rel">  kanntest du kaum. Sein Tod macht dir trotzdem klar, wie gefährlich dieser Abend geworden ist.</p>
+            </div>
+
+          </div>
+
+          <button class="nw-arrow nw-arrow--right" id="arrowRight" aria-label="Weiter scrollen">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+        </div>
+        <p class="nw-scroll-hint">← Seitwärts wischen →</p>
+      </section>
+
+      <!-- 6. Spielinformationen -->
+      <section class="nw-gameinfo" data-reveal>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">So spielst du Enisa Pagany</p>
+          <p class="ph-info-text">
+            Du spielst Enisa elegant, klug und empathisch. Bleib ruhig, höre genau zu, stelle gezielte Fragen und gib nur so viel preis, wie nötig ist. Wenn du unter Druck gerätst, wahre deine Fassade, weiche aus, stelle Gegenfragen und gestehe nichts vorschnell.   
+          </p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Spielregeln</p>
+          <div class="ph-info-rules">
+            <div>
+              <p class="ph-info-rule-title">Lügen NICHT erlaubt</p>
+              <p class="ph-info-rule-text">
+                Du darfst keine bewusst falschen Fakten erfinden. Du musst aber nicht jede Frage vollständig beantworten und darfst ausweichen, Informationen zurückhalten oder mit einer harten Gegenfrage antworten.
               </p>
-            <p class="r1-char-detail-title">Beschreibung der Rolle</p>
-            <p class="r1-char-desc">
-              Nach außen bist du die Ruhe selbst: empathisch 
-              und stabilisierend. Innerlich bist du verzweifelt. 
-              Du wirst erpresst und musst ein falsches Spiel 
-              spielen. Du fühlst dich schuldig gegenüber Jake, 
-              aber dein Selbsterhaltungstrieb ist stärker. Du 
-              beobachtest den Abend genau: Plant deine 
-              Erpresserin Diana bereits ihren nächsten Zug?
-            </p>
-          </div>
-
-          <div class="r1-character" data-reveal>
-            <h3 class="r1-char-name">Michael Silber</h3>
-            <div class="r1-char-img">
-              <img src="../images/Michael_Silber.png" alt="Charakter 2" onerror="this.style.display='none'" />
             </div>
-            <p class="r1-char-desc">Wirkt seriös und charismatisch, doch du traust 
-              ihm nicht. Du versuchst zu analysieren, ob er 
-              eine Gefahr für dein Geheimnis darstellt.
-            </p>
-          </div>
-
-          <div class="r1-character" data-reveal>
-            <h3 class="r1-char-name">Jake Winterfield</h3>
-            <div class="r1-char-img">
-              <img src="../images/Jake_Winterfield.png" alt="Charakter 3" onerror="this.style.display='none'" />
+            <div>
+              <p class="ph-info-rule-title">Schweigen ist Gold</p>
+              <p class="ph-info-rule-text">
+                Geheime Informationen verrätst du nur, wenn du direkt darauf angesprochen wirst und dich nicht mehr glaubwürdig herausreden kannst.
+              </p>
             </div>
-            <p class="r1-char-desc">Dein „Patient“ und Freund. Du hast ihn jahrelang 
-              stabilisiert, ihn aber dann auf Befehl manipuliert. 
-              Du wolltest nicht, hattest aber keine Wahl.
-            </p>
-          </div>
-
-          <div class="r1-character" data-reveal>
-            <h3 class="r1-char-name">Zoe Winterfield</h3>
-            <div class="r1-char-img">
-              <img src="../images/Zoe_Winterfield.png" alt="Charakter 4" onerror="this.style.display='none'" />
+            <div>
+              <p class="ph-info-rule-title">Spiel aus Enisas Perspektive</p>
+              <p class="ph-info-rule-text">
+                Bleib in deiner Rolle und spiele aus Enisas Perspektive. Gib deine Geheimnisse auf keinen Fall preis, es sei denn, die anderen konnten dich entlarven und du siehst keinen Ausweg mehr. 
+              </p>
             </div>
-            <p class="r1-char-desc">Jakes Ehefrau. Du musst sie beruhigen, damit 
-              sie Jakes (und deine) Fassade nicht zum 
-              Einsturz bringt.
-            </p>
-          </div>
-
-          <div class="r1-character" data-reveal>
-            <h3 class="r1-char-name">Diana Seleznev</h3>
-            <div class="r1-char-img">
-              <img src="../images/Diana_Seleznev.png" alt="Charakter 5" onerror="this.style.display='none'" />
-            </div>
-            <p class="r1-char-desc">Du musstest ihr helfen, Jake abzuwerben. Du 
-              weißt, dass sie eine Marionette in Dianas Plan ist.
-            </p>
-          </div>
-
-          <div class="r1-character" data-reveal>
-            <h3 class="r1-char-name">Luisa Falkenberg</h3>
-            <div class="r1-char-img">
-              <img src="../images/Luisa_Falkenberg.png" alt="Charakter 6" onerror="this.style.display='none'" />
-            </div>
-            <p class="r1-char-desc">Als Regionalleiterin der Mainmetall AG hat sie 
-              dich vor Monaten angeworben, doch dann 
-              geschah der folgenschwere Fehler: Du hast 
-              eine Affäre mit ihr begonnen. Du würdest gerne 
-              behaupten, dass du es bereust, doch das wäre 
-              nichts als Selbstbetrug.
-            </p>
-          </div>
-
-          <div class="r1-character" data-reveal>
-            <h3 class="r1-char-name">Eric Dumont</h3>
-            <div class="r1-char-img">
-              <img src="../images/Eric_Dumont.png" alt="Charakter 7" onerror="this.style.display='none'" />
-            </div>
-            <p class="r1-char-desc">Er war heute der Moderator, der für gute 
-              Stimmung am Abend gesorgt hat. Er war sowohl 
-              in der Organisation des Abends als auch für die 
-              Technik im Hintergrund verantwortlich.
-            </p>
-          </div>
-
-          <div class="r1-character" data-reveal>
-            <h3 class="r1-char-name">Diego Diaz</h3>
-            <div class="r1-char-img">
-              <img src="../images/Diego_Diaz.png" alt="Charakter 8" onerror="this.style.display='none'" />
-            </div>
-            <p class="r1-char-desc">Ein mysteriöser Mann. Du kennst ihn nicht und 
-              verstehst auch nicht, was er heute hier zu 
-              suchen hat.
-            </p>
-          </div>
-
-          <div class="r1-character" data-reveal>
-            <h3 class="r1-char-name">Cole Silverman</h3>
-            <div class="r1-char-img">
-              <img src="../images/Cole_Silverman.png" alt="Charakter 9" onerror="this.style.display='none'" />
-            </div>
-            <p class="r1-char-desc">Das heutige Opfer. Es scheint, als wüsste 
-                niemand so genau, was denamerikanischen 
-                Rechtsanwalt auf das heutige Firmenevent 
-                geführt hatte. 
-            </p>
           </div>
         </div>
-      </section>
 
-      <!-- 4. Rollenbeschreibung als reiner Text -->
-      <section class="r1-text" data-reveal>
-        <h2 class="r1-text-title">Dein Kleidungsstil</h2>
-        <p>        
-          Ein moderner Business-Look, zum Beispiel 
-          eine Bluse mit Blazer oder ein elegantes Kleid.
-        </p>
-      </section>
-
-      <section class="r1-text" data-reveal>
-        <h2 class="r1-text-title">Wie du deine Rolle am besten spielst</h2>
-        <p>
-          Du bist stets Kontrolliert & misstrauisch. 
-          Versuche ruhig zu bleiben, prüfe jede Frage. 
-          Gibt selten direkte Antworten.
-        </p>
-      </section>
-
-      <section class="r1-text" data-reveal>
-        <h2 class="r1-text-title">Deine Ziele des Abends</h2>
-        <p>
-          1. Identität schützen:
-            Niemand darf den Grund erfahren, aus 
-            dem du erpresst wirst.
-        </p>
-        <p>
-          2. Dianas Griff lockern: 
-            Finde heraus, wie viel sie heute Abend 
-            noch von dir verlangt.
-        </p>
-      </section>
-
-      <section class="r1-text r1-rundenlogik" data-reveal>
-        <h2 class="r1-text-title">Spielregeln</h2>
-
-        <div class="r1-runde-block">
-          <h3 class="r1-runde-label">Lügen <b>NICHT</b> erlaubt</h3>
-          <p>Du darfst nicht lügen aber Fragen aus dem Weg gehen.</p>
+        <div class="ph-info-block">
+          <p class="ph-info-title">Dein Look des Abends</p>
+          <p class="ph-info-text">Dein Kleidungsstil ist hochwertig, elegant und geschäftlich.</p>
+          <p class="ph-info-text">Trage zum Beispiel einen dunklen Anzug, ein hochwertiges Hemd, elegante Schuhe oder einen schlichten Mantel. Du sollst wohlhabend, charmant und kontrolliert wirken. Nicht protzig, aber sichtbar über dem Durchschnitt. Dein Look soll zeigen: Du bist kein zufälliger Gast. Du bist jemand mit Einfluss, Geld und Selbstverständlichkeit.</p>
         </div>
 
-        <div class="r1-runde-block">
-          <h3 class="r1-runde-label">Unter Druck</h3>
-          <p>Wenn du unter Druck gerätst, nutze Gegenfragen und lenke auf den Mordfall zurück.</p>
+        <div class="ph-info-block">
+          <p class="ph-info-title">Deine Ziele des Abends</p>
+          <p class="ph-info-text">
+            <b>1. Deine Fassade schützen:</b> Niemand soll erfahren, weshalb du unter Druck stehst und warum deine berufliche Vergangenheit belastet ist. 
+          </p>
+          <p class="ph-info-text">
+            <b>2.  Dianas Einfluss begrenzen: </b>  Finde heraus, was Diana von dir verlangt und ob sie bereits ihren nächsten Schritt plant.
+          </p>
+          <p class="ph-info-text">
+            <b>3. Jake stabilisieren:</b> Schütze Jake vor zu viel Druck, ohne deine eigene Schuld oder Abhängigkeit sichtbar zu machen.
+          </p>
         </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Vorbereitung für morgen</p>
+          <p class="ph-info-text">Morgen stellst du dich zunächst kurz vor. Deinen Vorstellungstext bekommst du vor der ersten Spielrunde und kannst ihn einfach vorlesen.</p>
+          <p class="ph-info-text">Du musst noch keine Geheimnisse andeuten und solltest nichts erklären, was nicht ausdrücklich in deinem Vorstellungstext steht.</p>
+          <p class="ph-info-text">Während des Spiels erhältst du zu Beginn jeder Runde einen kurzen Hinweis, worauf du besonders achten solltest.</p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Rundenlogik</p>
+          <div class="ph-info-rounds">
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Vorstellungsrunde</span>
+              <p class="ph-info-round-text">
+                <b>Tretet in eure Rollen und stellt euch gegenseitig vor. Wer seid ihr, warum seid ihr heute hier und was verschweigt ihr vielleicht?</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Runde 1</span>
+              <p class="ph-info-round-text">
+                <b>Lernt die Gäste kennen und stellt erste Fragen. Wer war während des Blackouts wo und wer wirkt auffällig?</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Runde 2</span>
+              <p class="ph-info-round-text">
+                <b>Neue Hinweise kommen ans Licht. Überprüft Aussagen, beobachtet Reaktionen und findet heraus, wer unter Druck gerät.</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Runde 3</span>
+              <p class="ph-info-round-text">
+                <b>Alle Karten liegen auf dem Tisch. Verbindet die Hinweise, konfrontiert die Verdächtigen und einigt euch auf einen Täter.</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Auflösung</span>
+              <p class="ph-info-round-text">
+                <b>Die Wahrheit wird enthüllt. Der Täter wird enttarnt und alle Geheimnisse werden aufgedeckt.</b>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Zwei kleine Dinge vorab</p>
+          <p class="ph-info-text">
+            <b>1.</b> Bitte lade dein Handy vor Spielstart auf. Du wirst es
+            benötigen, um dich zu orientieren und deine Rollenbeschreibungen
+            abrufen zu können.
+          </p>
+          <p class="ph-info-text">
+            <b>2.</b> Aktiviere während der Runden den Flugmodus, um ein
+            ungestörtes Spielerlebnis zu ermöglichen.
+          </p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Vorstellungstext</p>
+          <p class="ph-info-text">
+           Ich bin Enisa Pagany, Therapeutin und mit Jake seit vielen Jahren verbunden. Ich wurde als seine Begleitung zu diesem Abend eingeladen.
+          </p>
+        </div>
+
       </section>
 
-      <section class="r1-text r1-rundenlogik" data-reveal>
-        <h2 class="r1-text-title">Rundenlogik</h2>
-
-        <div class="r1-runde-block">
-          <h3 class="r1-runde-label">Runde 1 — Beobachten und testen</h3>
-          <p>Deine erste Aufgabe: Lerne die anderen Gäste genau kennen. Stelle gezielte Fragen und finde heraus, wer etwas verheimlicht. Achte auf nervöse Reaktionen, Widersprüche und ungewöhnliches Verhalten. Nutze dein Wissen und deine Hinweise, um Gespräche zu lenken und erste Verdachtsmomente zu sammeln. Versuche herauszufinden, wer während des Blackouts etwas gesehen oder getan haben könnte.</p>
-        </div>
-
-        <div class="r1-runde-block">
-          <h3 class="r1-runde-label">Runde 2 — Druck aufbauen</h3>
-          <p>Jetzt wird das Spiel intensiver. Du erhältst neue Informationen, die deine Rolle und deine Ziele beeinflussen. Nutze diese Hinweise klug. Stelle andere Spieler gezielt zur Rede, bringe sie in Erklärungsnot und lenke den Verdacht von dir weg. Verbünde dich mit anderen oder streue Zweifel – jede Information kann entscheidend sein.</p>
-        </div>
-
-        <div class="r1-runde-block">
-          <h3 class="r1-runde-label">Runde 3 — Konfrontation</h3>
-          <p>Der Moment der Wahrheit. Geheimnisse kommen ans Licht und Aussagen werden überprüft. Nutze alles, was du herausgefunden hast, um andere zu entlarven oder dich selbst zu schützen. Beobachte genau, wer plötzlich nervös wird oder sich widerspricht. Am Ende entscheidet sich, wer die Wahrheit erkennt – und wer sie erfolgreich verborgen hat.</p>
-        </div>
-
-        <div class="r1-runde-block r1-runde-finale">
-          <h3 class="r1-runde-label">Die Auflösung</h3>
-          <p>Jetzt wird offenbart, was wirklich passiert ist. Der Täter wird enttarnt und alle Geheimnisse werden aufgedeckt.</p>
-          <p class="r1-runde-cta">Mach dich bereit für das Finale.</p>
-        </div>
-      </section>
-
-      <section class="r1-text" data-reveal>
-        <h2 class="r1-text-title">Zwei kleine Dinge vorab</h2>
-        <p>
-          1. Bitte lade dein Handy vor Spielstart auf. Du wirst es benötigen, um dich zu orientieren und deine Rollenbeschreibungen abrufen zu können. 
-        </p>
-        <p>
-          2. Aktiviere während der Runden den Flugmodus, um ein ungestörtes Spielerlebnis zu ermöglichen.
-        </p>
-      </section>
-
-      <div class="r1-finale-cta" data-reveal>
-        <p class="r1-finale-hint">Euer Moderator hat das Startsignal gegeben?</p>
-        <a class="button button-primary r1-finale-btn" href="runde1.html" data-protected-link="runde1">Runde 1 öffnen</a>
+      <!-- 7. Finaler CTA -->
+      <div class="nw-final-cta" data-reveal>
+        <p>Euer Moderator hat das Startsignal gegeben?</p>
+        <a class="button button-primary nw-final-btn" href="runde1.html">
+          Runde 1 starten
+        </a>
       </div>
 
     </main>
 
-        <footer class="footer">
-      <p><a href="../../impressum/index.html" ><em>@Impressum</em></a></p>
+    <footer class="footer">
+      <p><a href="../../impressum/index.html">@Impressum</a></p>
     </footer>
 
     <script src="script.js"></script>

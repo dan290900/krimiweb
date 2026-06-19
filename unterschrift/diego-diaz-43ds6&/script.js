@@ -1,12 +1,11 @@
-// Gemeinsame UI-Logik fuer alle Seiten des Sophie-Mey-Prototyps.
 document.addEventListener("DOMContentLoaded", () => {
   const roundConfig = {
-    runde1: { password: "DARKSIDE", label: "Runde 1" },
+   runde1: { password: "DARKSIDE", label: "Runde 1" },
     runde2: { password: "BLACKOUT", label: "Runde 2" },
-    runde3: { password: "MAINMETALL", label: "Runde 3" },
+    runde3: { password: "STAHLMANN & FAUST", label: "Runde 3" },
   };
 
-  const storagePrefix = "krimi:sophie-mey:";
+  const storagePrefix = "krimi:peter-lehmann:";
   const pageRound = document.body.dataset.round
     ? `runde${document.body.dataset.round}`
     : null;
@@ -36,9 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function openAccessModal(roundKey, onSuccess) {
     const round = roundConfig[roundKey];
-    if (!round) {
-      return;
-    }
+    if (!round) return;
 
     const title = accessModal.querySelector("[data-access-title]");
     const hint = accessModal.querySelector("[data-access-hint]");
@@ -54,30 +51,19 @@ document.addEventListener("DOMContentLoaded", () => {
     accessModal.hidden = false;
 
     cancelButton.hidden = pageRound === roundKey;
-    cancelButton.onclick = () => {
-      accessModal.hidden = true;
-    };
+    cancelButton.onclick = () => { accessModal.hidden = true; };
 
     form.onsubmit = (event) => {
       event.preventDefault();
-
       if (normalizePassword(input.value) === round.password) {
         unlockRound(roundKey);
         accessModal.hidden = true;
         error.textContent = "";
-
-        if (typeof onSuccess === "function") {
-          onSuccess();
-        }
-
-        if (pageRound === roundKey) {
-          revealProtectedPage();
-        }
-
+        if (typeof onSuccess === "function") onSuccess();
+        if (pageRound === roundKey) revealProtectedPage();
         return;
       }
-
-      error.textContent = "Passwort falsch. Bitte pruefe deine Eingabe.";
+      error.textContent = "Passwort falsch. Bitte prüfe deine Eingabe.";
       input.focus();
       input.select();
     };
@@ -88,11 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
   protectedLinks.forEach((link) => {
     link.addEventListener("click", (event) => {
       const roundKey = link.dataset.protectedLink;
-
-      if (!roundKey || isUnlocked(roundKey)) {
-        return;
-      }
-
+      if (!roundKey || isUnlocked(roundKey)) return;
       event.preventDefault();
       openAccessModal(roundKey, () => {
         window.location.href = link.getAttribute("href");
@@ -118,18 +100,13 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       },
-      {
-        threshold: 0.18,
-        rootMargin: "0px 0px -40px 0px",
-      }
+      { threshold: 0.05, rootMargin: "0px 0px 120px 0px" }
     );
-
     revealItems.forEach((item) => observer.observe(item));
   } else {
     revealItems.forEach((item) => item.classList.add("is-visible"));
   }
 
-  // Subtiles Licht, das der Maus folgt und dem Layout etwas Tiefe gibt.
   const root = document.documentElement;
   window.addEventListener("pointermove", (event) => {
     const x = `${Math.round((event.clientX / window.innerWidth) * 100)}%`;
@@ -138,13 +115,67 @@ document.addEventListener("DOMContentLoaded", () => {
     root.style.setProperty("--pointer-y", y);
   });
 
+  // Beziehungs-Karussell: Pfeil-Buttons
+  const relTrack = document.getElementById("relationsTrack");
+  const arrowLeft = document.getElementById("arrowLeft");
+  const arrowRight = document.getElementById("arrowRight");
+
+  if (relTrack && arrowLeft && arrowRight) {
+    const STEP = 210;
+
+    function updateArrows() {
+      arrowLeft.disabled = relTrack.scrollLeft <= 2;
+      arrowRight.disabled = relTrack.scrollLeft >= relTrack.scrollWidth - relTrack.clientWidth - 2;
+    }
+
+    arrowLeft.addEventListener("click", () => relTrack.scrollBy({ left: -STEP, behavior: "smooth" }));
+    arrowRight.addEventListener("click", () => relTrack.scrollBy({ left: STEP, behavior: "smooth" }));
+    relTrack.addEventListener("scroll", updateArrows, { passive: true });
+    window.addEventListener("resize", updateArrows);
+    updateArrows();
+  }
+
+  // Bild-Lightbox: anklickbare Bilder mit [data-zoomable] vergrößern
+  const zoomables = document.querySelectorAll("[data-zoomable]");
+  if (zoomables.length) {
+    const lightbox = document.createElement("div");
+    lightbox.className = "img-lightbox";
+    lightbox.hidden = true;
+    lightbox.innerHTML = `
+      <button class="img-lightbox-close" type="button" aria-label="Schließen">&times;</button>
+      <img src="" alt="" />
+    `;
+    document.body.appendChild(lightbox);
+    const lightboxImg = lightbox.querySelector("img");
+
+    function closeLightbox() {
+      lightbox.hidden = true;
+      lightboxImg.src = "";
+      document.body.style.overflow = "";
+    }
+
+    zoomables.forEach((img) => {
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.currentSrc || img.src;
+        lightboxImg.alt = img.alt || "";
+        lightbox.hidden = false;
+        document.body.style.overflow = "hidden";
+      });
+    });
+
+    lightbox.addEventListener("click", closeLightbox);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !lightbox.hidden) closeLightbox();
+    });
+  }
+
   function createAccessModal() {
     const modal = document.createElement("div");
     modal.className = "access-modal";
     modal.hidden = true;
     modal.innerHTML = `
       <div class="access-card" role="dialog" aria-modal="true" aria-labelledby="access-title">
-        <p class="eyebrow">Zugang geschuetzt</p>
+        <p class="eyebrow">Zugang geschützt</p>
         <h2 id="access-title" data-access-title>Runde freischalten</h2>
         <p data-access-hint></p>
         <form class="access-form" data-access-form>
@@ -168,7 +199,6 @@ document.addEventListener("DOMContentLoaded", () => {
         </form>
       </div>
     `;
-
     document.body.appendChild(modal);
     return modal;
   }

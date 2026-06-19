@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
-    <title>Eric Dumont | Die letzte Unterschrift</title>
+    <title>Eric Dumont| Die letzte Unterschrift</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body data-page="home" data-role="Eric Dumont">
@@ -12,9 +12,9 @@
     <div class="page-gradient" aria-hidden="true"></div>
 
     <header class="topbar">
-      <a class="brand" href="index.html">
+      <a class="brand" href="https://www.darkside-games.de" target="_blank" rel="noopener">
         <span class="brand-mark"></span>
-        <span>Darkside Games</span>
+        <span>DARKSIDE GAMES</span>
       </a>
       <div class="phase-pills" aria-label="Spielphasen">
         <a class="phase-pill is-current" href="index.html">Start</a>
@@ -24,218 +24,282 @@
       </div>
     </header>
 
-    <main class="r1-main">
+    <main>
 
-      <!-- 1. Große Überschrift -->
-      <section class="r1-header" data-reveal>
-        <h1>Die letzte Unterschrift</h1>
+      <!-- 1. Überschrift der Rolle -->
+      <section class="nw-header" data-reveal>
+        <p class="nw-eyebrow">Darkside Games · Die letzte Unterschrift</p>
+        <h1 class="nw-title">Deine Rollenakte</h1>
       </section>
 
-      <!-- 2. Video -->
-      <section class="r1-video" data-reveal>
-        <p class="r1-header-sub">Intro Video — Gerne am Vorabend schauen, um optimal vorbereitet zu sein.</p>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/i35hPhZmOvY?si=oLlYlwHqvL1WF1j3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <!-- 4. Deine Rolle (Bild + Hinweise) -->
+      <section class="nw-role" data-reveal>
+        <div class="nw-role-card">
+
+          <div class="nw-role-img-wrap">
+            <div class="nw-role-img">
+              <img src="../images/Eric_Dumont.png" alt="Eric Dumont">
+              <span class="nw-placeholder-initials">E.D.</span>
+            </div>
+            <span class="nw-role-badge">Deine Rolle</span>
+          </div>
+
+          <div class="nw-role-content">
+            <h2 class="nw-role-name">Eric Dumont</h2>
+            <p class="nw-role-subtitle">CEO</p>
+
+            <p class="nw-role-desc">
+              Du bist Eric Dumont, Eventmanager und technischer Verantwortlicher des Abends, weshalb du auf dem morgigen Event der Stahlmann & Faust AG für Ablauf, Inszenierung und Technik zuständig bist. 
+            </p>
+            <p class="nw-role-desc">
+              Nach außen wirkst du locker, professionell und lösungsorientiert, doch innerlich weißt du, dass der Blackout kein normaler technischer Fehler war. Jemand wollte, dass dieser Blackout passiert, und du hast dich auf etwas eingelassen, ohne zu wissen, wofür der Ausfall wirklich genutzt werden sollte. 
+            </p>
+            <p class="nw-role-desc">
+              Dann kommt der besagte Abend. Und mit ihm der Blackout. Als das Licht wieder angeht, ist der amerikanische Anwalt Cole Silverman tot. Dir wird klar, dass der Verdacht sehr schnell auf dich fallen könnte. 
+            </p>
+          </div>
+
         </div>
+
       </section>
 
-      <!-- Spiel starten -->
-      <div class="r1-start-banner" data-reveal>
-        <a class="button button-primary" href="runde1.html" data-protected-link="runde1"><b>Spiel starten</b></a>
-        <p>Erst drücken, wenn der Moderator das Spiel offiziell gestartet hat. Du erhältst dann das Passwort für jede Runde direkt vom Moderator.</p>
+      <!-- Video -->
+      <div class="nw-video" data-reveal>
+        <p class="nw-video-label">Introvideo: Schau es dir am Vortag an um vorbereitet zu sein</p>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/N7bApXobgzE?si=LepeKn4fClTZSYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       </div>
 
-      <!-- 3. Die 7 Charaktere -->
-      <section class="r1-characters">
-        <h2 class="r1-characters-title" data-reveal>Die Charaktere des Abends</h2>
-        <div class="r1-character-grid">
+      <!-- 5. Beziehungen -->
+      <section class="nw-relations" data-reveal>
+        <h2 class="nw-relations-title">Dein Blick auf die anderen</h2>
+        <div class="nw-relations-wrapper">
 
-          <div class="r1-character r1-character--self" data-reveal>
-            <h3 class="r1-char-name">Eric Dumont</h3>
-            <div class="r1-char-img">
-              <img src="../images/Eric_Dumont.png" alt="Charakter 1" onerror="this.style.display='none'" />
+          <button class="nw-arrow nw-arrow--left" id="arrowLeft" aria-label="Zurück scrollen">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div class="nw-relations-track" id="relationsTrack">
+
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                  <img src="../images/Diana_Seleznev.png" alt="Diana Seleznev">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">D.S.</span>
+              </div>
+              <p class="nw-char-name">Diana Seleznev</p>
+              <p class="nw-char-rel">ist Vizevorständin bei Stahlmann & Faust und eine sehr einflussreiche Person. Sie und Luisa haben dir den Auftrag gegeben, bei diesem Event die Technik zu verantworten. Wenn sie Fragen stellt, solltest du vorsichtig bleiben, denn sie ist nicht leicht zu durchschauen.</p>
             </div>
-            <p class="r1-char-detail-title">Spielhinweise</p>
-            <p class="r1-char-desc">Du bist Eventprofi, Moderator und Showman. Du hältst den Abend am Laufen, selbst wenn alles brennt. Dein Ziel ist es, nicht als Sündenbock zu enden. Du warst Teil einer Inszenierung, aber niemals Teil eines Mordes.</p>
-            <p class="r1-char-detail-title">Beschreibung der Rolle</p>
-            <p class="r1-char-desc">Dieser Auftrag bei Mainmetall war deine einmalige Riesengelegenheit, um in der Branche ganz nach oben zu kommen. Doch dann wurdest du anonym kontaktiert und erpresst: Entweder du sorgst für einen exakt getimten Blackout während der Show, oder der Auftrag wird dir entzogen und dein Ruf ruiniert. Du hast nachgegeben und das Licht ausgeschaltet. Jetzt ist Cole tot und dir ist klar: Du wurdest als nützlicher Idiot benutzt, um das perfekte Zeitfenster für ein Verbrechen zu schaffen.</p>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                  <img src="../images/Zoe_Winterfield.png" alt="Zoe Winterfield">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">Z.W.</span>
+              </div>
+              <p class="nw-char-name">Zoe Winterfield</p>
+              <p class="nw-char-rel"> ist Polizistin und damit eine echte Gefahr für dich. Sie wird nicht nur fragen, was passiert ist, sondern auch darauf achten, ob deine Erklärung logisch klingt. Bei ihr musst du ruhig, klar und glaubwürdig bleiben. Zu viel Humor kann bei ihr schnell verdächtig wirken.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                  <img src="../images/Jake_Winterfield.png" alt="Jake Winterfield">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">J.W.</span>
+              </div>
+              <p class="nw-char-name">Jake Winterfield</p>
+              <p class="nw-char-rel">   erscheint dir ziemlich nervös und ist nur schwer zu greifen. Durch Gemunkel und kleine Kommentare hast du erfahren, dass er aus den USA kommt und vor seinem Job bei Stahlmann & Faust beim amerikanischen Militär war. Genau dieser Hintergrund macht ihn für dich interessant: In brenzligen Momenten wie diesen könnte er derjenige sein, der die Nerven behält und die Lage richtig einschätzt. Behalte ihn im Auge, vielleicht kann er dir nützlich sein.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                 <img src="../images/Diego_Diaz.png" alt="Diego Diaz">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">D.D.</span>
+              </div>
+              <p class="nw-char-name">Diego Diaz</p>
+              <p class="nw-char-rel"> ist für dich besonders gefährlich. Er weiß, dass der Blackout kein Zufall war. Du weißt nicht genau, wie weit er gehen würde, aber du spürst, dass er dich unter Druck setzen kann. Beobachte genau, ob er dich schützt, belastet oder unter Druck setzt.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                 <img src="../images/Luisa_Falkenberg.png" alt="Luisa Falkenberg">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">L.F.</span>
+              </div>
+              <p class="nw-char-name">Luisa Falkenberg</p>
+              <p class="nw-char-rel">ist Regionalleiterin bei Stahlmann & Faust und hat die Gäste offiziell eingeladen. Sie kennt den Ablauf des Events und könnte Fragen dazu stellen, was geplant war und was nicht. Bleib ihr gegenüber sachlich und vermeide zu viele Details.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                  <img src="../images/Michael_Silber.png" alt="Michael Silber">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">M.S.</span>
+              </div>
+              <p class="nw-char-name">Michael Silber</p>
+              <p class="nw-char-rel"> wirkt kontrolliert und geschäftlich, aber auch schwer durchschaubar. Du weißt nicht, was er wirklich mit diesem Abend zu tun hat. Achte darauf, ob er den Blackout nutzt, um Druck auf andere auszuüben.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                 <img src="../images/Enisa_Pagany.png" alt="Enisa Pagany">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">E.P.</span>
+              </div>
+              <p class="nw-char-name">Enisa Pagany</p>
+              <p class="nw-char-rel">   ist eine Art Psychologin, genau weißt du es aber nicht. Sie beobachtet Menschen sehr genau. Sie wirkt ruhig, könnte aber merken, wenn du ausweichst oder nervös wirst. Antworte ihr nicht zu hektisch und vermeide unnötige Erklärungen.</p>
+            </div>
+
+            <div class="nw-char-card">
+              <div class="nw-char-img">
+                 <img src="../images/Cole_Silverman.png" alt="Cole Silverman">
+                <span class="nw-placeholder-initials nw-placeholder-initials--sm">C.S.</span>
+              </div>
+              <p class="nw-char-name">Cole Silverman</p>
+              <p class="nw-char-rel">  ist tot. Du kanntest ihn zwar nicht, doch sein Tod bedrückt dich dennoch.</p>
+            </div>
+
           </div>
 
-          <div class="r1-character" data-reveal>
-            <h3 class="r1-char-name">Michael Silber</h3>
-            <div class="r1-char-img">
-              <img src="../images/Michael_Silber.png" alt="Charakter 2" onerror="this.style.display='none'" />
-            </div>
-            <p class="r1-char-desc">CEO einer Tierfutterfirma. Er wirkt durch den Tod 
-              von Cole stark getroffen, aber du hast das Gefühl, 
-              er spielt es nur vor.
-            </p>
-          </div>
+          <button class="nw-arrow nw-arrow--right" id="arrowRight" aria-label="Weiter scrollen">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
 
-          <div class="r1-character" data-reveal>
-            <h3 class="r1-char-name">Jake Winterfield</h3>
-            <div class="r1-char-img">
-              <img src="../images/Jake_Winterfield.png" alt="Charakter 3" onerror="this.style.display='none'" />
-            </div>
-            <p class="r1-char-desc">Er strahlt Kontrolle aus. Du versuchst, ihn als 
-              Sicherheitsanker für dich einzubauen, fürchtest 
-              aber seine Intuition als Soldat.
-            </p>
-          </div>
-
-          <div class="r1-character" data-reveal>
-            <h3 class="r1-char-name">Zoe Winterfield</h3>
-            <div class="r1-char-img">
-              <img src="../images/Zoe_Winterfield.png" alt="Charakter 4" onerror="this.style.display='none'" />
-            </div>
-            <p class="r1-char-desc">Als Polizistin ist sie dein Albtraum. Du hast das 
-                Gefühl, sie sieht direkt durch dein Show-Lächeln 
-                hindurch.
-            </p>
-          </div>
-
-          <div class="r1-character" data-reveal>
-            <h3 class="r1-char-name">Diana Seleznev</h3>
-            <div class="r1-char-img">
-              <img src="../images/Diana_Seleznev.png" alt="Charakter 5" onerror="this.style.display='none'" />
-            </div>
-            <p class="r1-char-desc">Deine Auftraggeberin. Du hast panische Angst, 
-              dass sie von deiner Erpressung erfährt und 
-              dass du für den Blackout verantwortlich bist.
-            </p>
-          </div>
-
-          <div class="r1-character" data-reveal>
-            <h3 class="r1-char-name">Luisa Falkenberg</h3>
-            <div class="r1-char-img">
-              <img src="../images/Luisa_Falkenberg.png" alt="Charakter 6" onerror="this.style.display='none'" />
-            </div>
-            <p class="r1-char-desc">Eine dir untergeordnete Regionalleiterin. Du hast 
-                ihren Karrierefehler gedeckt, nun steht sie in 
-                deiner Schuld und tut alles, um diesen Fehler
-                wiedergutzumachen.
-            </p>
-          </div>
-
-          <div class="r1-character" data-reveal>
-            <h3 class="r1-char-name">Enisa Pagany</h3>
-            <div class="r1-char-img">
-              <img src="../images/Enisa_Pagany.png" alt="Charakter 7" onerror="this.style.display='none'" />
-            </div>
-            <p class="r1-char-desc">Eine Therapeutin. Du hast bemerkt, dass sie sich 
-                vor Beginn des Events auffällig oft in der Nähe der 
-                Technik-Regie aufhielt.
-            </p>
-          </div>
-
-          <div class="r1-character" data-reveal>
-            <h3 class="r1-char-name">Diego Diaz</h3>
-            <div class="r1-char-img">
-              <img src="../images/Diego_Diaz.png" alt="Charakter 8" onerror="this.style.display='none'" />
-            </div>
-            <p class="r1-char-desc">Ein Name, den du noch vor kurzem gelesen hast, 
-                obwohl er auf keiner offiziellen Gästeliste stand. 
-                Er ist ruhig und wirkt mysteriös.
-            </p>
-          </div>
-
-          <div class="r1-character" data-reveal>
-            <h3 class="r1-char-name">Cole Silverman</h3>
-            <div class="r1-char-img">
-              <img src="../images/Cole_Silverman.png" alt="Charakter 9" onerror="this.style.display='none'" />
-            </div>
-            <p class="r1-char-desc">Das heutige Opfer. Es scheint, als wüsste 
-                niemand so genau, was den amerikanischen 
-                Rechtsanwalt auf das heutige Firmenevent 
-                geführt hatte. 
-            </p>
-          </div>
         </div>
+        <p class="nw-scroll-hint">← Seitwärts wischen →</p>
       </section>
 
-      <!-- 4. Rollenbeschreibung als reiner Text -->
-      <section class="r1-text" data-reveal>
-        <h2 class="r1-text-title">Dein Kleidungsstil</h2>
-        <p>
-          Ein lockeres Outfit, das zu einem Ingenieur oder IT-Experten passt, zum Beispiel Hemd oder Hoodie mit Jeans und Sneakern.
-        </p>
-      </section>
+      <!-- 6. Spielinformationen -->
+      <section class="nw-gameinfo" data-reveal>
 
-      <section class="r1-text" data-reveal>
-        <h2 class="r1-text-title">Wie du deine Rolle am besten spielst</h2>
-        <p>
-          Du machst lockere Kommentare, versuchst Spannung mit Humor zu überspielen. Wirst nervös, wenn jemand zu tief nachfragt und lenkst das Thema immer schnell weg auf eine Person deiner Wahl.
-        </p>
-      </section>
-
-      <section class="r1-text" data-reveal>
-        <h2 class="r1-text-title">Deine Ziele des Abends</h2>
-        <p>
-          1. Berufliches Überleben: Niemand darf beweisen, dass du den Blackout absichtlich herbeigeführt hast.
-        </p>
-        <p>
-          2. Den Erpresser finden: Wer hat dich gezwungen, das Licht auszuschalten?
-        </p>
-      </section>
-
-      <section class="r1-text r1-rundenlogik" data-reveal>
-        <h2 class="r1-text-title">Spielregeln</h2>
-
-        <div class="r1-runde-block">
-          <h3 class="r1-runde-label">Lügen <b>NICHT</b> erlaubt</h3>
-          <p>Du darfst nicht lügen aber Fragen aus dem Weg gehen.</p>
+        <div class="ph-info-block">
+          <p class="ph-info-title">So spielst du Eric Dumont</p>
+          <p class="ph-info-text">
+            Du spielst Eric angespannt, aber nicht panisch. Bleib locker, reagiere schnell und nutze Humor oder freche Sprüche, um deine Unsicherheit zu überspielen. Wenn dich jemand zum Blackout befragt, rede dich zunächst mit Technik, Strom, Ablauf oder einem missverstandenen Showelement heraus. Gib nicht sofort zu, dass der Blackout gewollt war. Wenn der Druck größer wird, verteidige dich, stelle Gegenfragen und mache klar, dass du mit dem Mord nichts zu tun hast.    
+          </p>
         </div>
 
-        <div class="r1-runde-block">
-          <h3 class="r1-runde-label">Unter Druck</h3>
-          <p>Wenn du unter Druck gerätst, nutze Gegenfragen und lenke auf den Mordfall zurück.</p>
+        <div class="ph-info-block">
+          <p class="ph-info-title">Spielregeln</p>
+          <div class="ph-info-rules">
+            <div>
+              <p class="ph-info-rule-title">Lügen NICHT erlaubt</p>
+              <p class="ph-info-rule-text">
+                Du darfst keine bewusst falschen Fakten erfinden. Du musst aber nicht jede Frage vollständig beantworten und darfst ausweichen, Informationen zurückhalten oder mit einer harten Gegenfrage antworten.
+              </p>
+            </div>
+            <div>
+              <p class="ph-info-rule-title">Schweigen ist Gold</p>
+              <p class="ph-info-rule-text">
+                Geheime Informationen verrätst du nur, wenn du direkt darauf angesprochen wirst und dich nicht mehr glaubwürdig herausreden kannst.
+              </p>
+            </div>
+            <div>
+              <p class="ph-info-rule-title">Spiel aus Erics Perspektive</p>
+              <p class="ph-info-rule-text">
+                Bleib in deiner Rolle und spiele aus Erics Perspektive. Gib deine Geheimnisse auf keinen Fall preis, es sei denn, die anderen konnten dich entlarven und du siehst keinen Ausweg mehr. 
+              </p>
+            </div>
+          </div>
         </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Dein Look des Abends</p>
+          <p class="ph-info-text">Du kleidest dich locker, auffällig und etwas übertrieben. Du siehst eher aus wie ein DJ, Rapper oder jemand aus der Partyszene als wie ein klassischer Eventmanager.</p>
+          <p class="ph-info-text">Trage zum Beispiel eine Cap, Oversized-Kleidung, Sneaker, eine auffällige Jacke oder Accessoires wie eine Kette oder Ringe. Du sollst nicht wie jemand wirken, der brav im Hintergrund die Technik betreut, sondern wie jemand, der gerne auffällt und sich selbst ziemlich cool findet.</p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Deine Ziele des Abends</p>
+          <p class="ph-info-text">
+            <b>1. Deine Rolle beim Blackout kleinhalten:</b> Niemand soll zu früh verstehen, dass der Blackout gewollt war und dass du daran beteiligt warst.
+          </p>
+          <p class="ph-info-text">
+            <b>2. Locker und professionell wirken:</b>  Du willst so erscheinen, als würdest du die Situation analysieren und aufklären wollen. Humor hilft dir, nicht zu nervös zu wirken.
+          </p>
+          <p class="ph-info-text">
+            <b>3. Diego beobachten:</b> Achte genau darauf, ob Diego dich schützt, belastet oder versucht, die Verantwortung auf dich abzuschieben.
+          </p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Vorbereitung für morgen</p>
+          <p class="ph-info-text">Morgen stellst du dich zunächst kurz vor. Deinen Vorstellungstext bekommst du vor der ersten Spielrunde und kannst ihn einfach vorlesen.</p>
+          <p class="ph-info-text">Du musst noch keine Geheimnisse andeuten und solltest nichts erklären, was nicht ausdrücklich in deinem Vorstellungstext steht.</p>
+          <p class="ph-info-text">Während des Spiels erhältst du zu Beginn jeder Runde einen kurzen Hinweis, worauf du besonders achten solltest.</p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Rundenlogik</p>
+          <div class="ph-info-rounds">
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Vorstellungsrunde</span>
+              <p class="ph-info-round-text">
+                <b>Tretet in eure Rollen und stellt euch gegenseitig vor. Wer seid ihr, warum seid ihr heute hier und was verschweigt ihr vielleicht?</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Runde 1</span>
+              <p class="ph-info-round-text">
+                <b>Lernt die Gäste kennen und stellt erste Fragen. Wer war während des Blackouts wo und wer wirkt auffällig?</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Runde 2</span>
+              <p class="ph-info-round-text">
+                <b>Neue Hinweise kommen ans Licht. Überprüft Aussagen, beobachtet Reaktionen und findet heraus, wer unter Druck gerät.</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Runde 3</span>
+              <p class="ph-info-round-text">
+                <b>Alle Karten liegen auf dem Tisch. Verbindet die Hinweise, konfrontiert die Verdächtigen und einigt euch auf einen Täter.</b>
+              </p>
+            </div>
+            <div class="ph-info-round-row">
+              <span class="ph-info-round-tag">Auflösung</span>
+              <p class="ph-info-round-text">
+                <b>Die Wahrheit wird enthüllt. Der Täter wird enttarnt und alle Geheimnisse werden aufgedeckt.</b>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Zwei kleine Dinge vorab</p>
+          <p class="ph-info-text">
+            <b>1.</b> Bitte lade dein Handy vor Spielstart auf. Du wirst es
+            benötigen, um dich zu orientieren und deine Rollenbeschreibungen
+            abrufen zu können.
+          </p>
+          <p class="ph-info-text">
+            <b>2.</b> Aktiviere während der Runden den Flugmodus, um ein
+            ungestörtes Spielerlebnis zu ermöglichen.
+          </p>
+        </div>
+
+        <div class="ph-info-block">
+          <p class="ph-info-title">Vorstellungstext</p>
+          <p class="ph-info-text">
+            Ich bin Eric Dumont und für Ablauf, Technik und Inszenierung des heutigen Abends verantwortlich. Mein Ziel ist, dass die Präsentation reibungslos läuft.
+          </p>
+        </div>
+
       </section>
 
-      <section class="r1-text r1-rundenlogik" data-reveal>
-        <h2 class="r1-text-title">Rundenlogik</h2>
-
-        <div class="r1-runde-block">
-          <h3 class="r1-runde-label">Runde 1 — Beobachten und testen</h3>
-          <p>Deine erste Aufgabe: Lerne die anderen Gäste genau kennen. Stelle gezielte Fragen und finde heraus, wer etwas verheimlicht. Achte auf nervöse Reaktionen, Widersprüche und ungewöhnliches Verhalten. Nutze dein Wissen und deine Hinweise, um Gespräche zu lenken und erste Verdachtsmomente zu sammeln. Versuche herauszufinden, wer während des Blackouts etwas gesehen oder getan haben könnte.</p>
-        </div>
-
-        <div class="r1-runde-block">
-          <h3 class="r1-runde-label">Runde 2 — Druck aufbauen</h3>
-          <p>Jetzt wird das Spiel intensiver. Du erhältst neue Informationen, die deine Rolle und deine Ziele beeinflussen. Nutze diese Hinweise klug. Stelle andere Spieler gezielt zur Rede, bringe sie in Erklärungsnot und lenke den Verdacht von dir weg. Verbünde dich mit anderen oder streue Zweifel – jede Information kann entscheidend sein.</p>
-        </div>
-
-        <div class="r1-runde-block">
-          <h3 class="r1-runde-label">Runde 3 — Konfrontation</h3>
-          <p>Der Moment der Wahrheit. Geheimnisse kommen ans Licht und Aussagen werden überprüft. Nutze alles, was du herausgefunden hast, um andere zu entlarven oder dich selbst zu schützen. Beobachte genau, wer plötzlich nervös wird oder sich widerspricht. Am Ende entscheidet sich, wer die Wahrheit erkennt – und wer sie erfolgreich verborgen hat.</p>
-        </div>
-
-        <div class="r1-runde-block r1-runde-finale">
-          <h3 class="r1-runde-label">Die Auflösung</h3>
-          <p>Jetzt wird offenbart, was wirklich passiert ist. Der Täter wird enttarnt und alle Geheimnisse werden aufgedeckt.</p>
-          <p class="r1-runde-cta">Mach dich bereit für das Finale.</p>
-        </div>
-      </section>
-
-      <section class="r1-text" data-reveal>
-        <h2 class="r1-text-title">Zwei kleine Dinge vorab</h2>
-        <p>
-          1. Bitte lade dein Handy vor Spielstart auf. Du wirst es benötigen, um dich zu orientieren und deine Rollenbeschreibungen abrufen zu können. 
-        </p>
-        <p>
-          2. Aktiviere während der Runden den Flugmodus, um ein ungestörtes Spielerlebnis zu ermöglichen.
-        </p>
-      </section>
-
-      <div class="r1-finale-cta" data-reveal>
-        <p class="r1-finale-hint">Euer Moderator hat das Startsignal gegeben?</p>
-        <a class="button button-primary r1-finale-btn" href="runde1.html" data-protected-link="runde1">Runde 1 öffnen</a>
+      <!-- 7. Finaler CTA -->
+      <div class="nw-final-cta" data-reveal>
+        <p>Euer Moderator hat das Startsignal gegeben?</p>
+        <a class="button button-primary nw-final-btn" href="runde1.html">
+          Runde 1 starten
+        </a>
       </div>
 
     </main>
 
-        <footer class="footer">
-      <p><a href="../../impressum/index.html" ><em>@Impressum</em></a></p>
+    <footer class="footer">
+      <p><a href="../../impressum/index.html">@Impressum</a></p>
     </footer>
 
     <script src="script.js"></script>

@@ -6,21 +6,27 @@
     <meta name="theme-color" content="#000000" />
     <title>Luisa Falkenberg | Runde 3</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Inhalt ab "Das Ziel der ersten Runde" zentrieren (nur Runde 1) */
+      .runde-sections { text-align: center; }
+      .runde-sections .runde-map { margin-left: auto; margin-right: auto; }
+      .runde-sections .runde-section { margin-inline: auto; }
+    </style>
   </head>
   <body class="locked-view" data-page="round" data-round="3" data-role="Luisa Falkenberg">
     <div class="page-noise" aria-hidden="true"></div>
     <div class="page-gradient" aria-hidden="true"></div>
 
     <header class="topbar">
-      <a class="brand" href="index.html">
+      <a class="brand" href="https://www.darkside-games.de">
         <span class="brand-mark"></span>
         <span>Darkside Games</span>
       </a>
       <div class="phase-pills" aria-label="Spielphasen">
         <a class="phase-pill" href="index.html">Start</a>
-        <a class="phase-pill" href="runde1.html" data-protected-link="runde1">Runde 1</a>
+        <a class="phase-pill" href="runde1.html">Runde 1</a>
         <a class="phase-pill" href="runde2.html" data-protected-link="runde2">Runde 2</a>
-        <a class="phase-pill is-current" href="runde3.html">Runde 3</a>
+        <a class="phase-pill is-current" href="runde3.html" data-protected-link="runde3">Runde 3</a>
       </div>
     </header>
 
@@ -30,7 +36,7 @@
         <div class="runde-hero-copy">
           <div class="round-badge">Runde 3</div>
           <h1>Konfrontation</h1>
-          <p class="runde-subtitle">Der Moment der Wahrheit. Geheimnisse kommen ans Licht – nutze alles, was du weißt.</p>
+          <p class="runde-subtitle">Der Moment der Wahrheit. Geheimnisse kommen ans Licht. Nutze alles, was du weißt.</p>
         </div>
         <div class="runde-portrait">
           <img src="../images/Luisa_Falkenberg.png" alt="Luisa Falkenberg" onerror="this.style.display='none'" />
@@ -41,45 +47,57 @@
 
         <div class="runde-section" data-reveal>
           <p class="runde-section-title">Das Ziel der dritten Runde</p>
-          <p>Du weißt zu viel und hast zu lange geschwiegen. Jetzt ist die letzte Chance: Entscheide, ob du Diana und Michael schützt oder dich gegen sie stellst und riskierst, deinen Job zu verlieren. </p>
+          <p>Finde heraus, ob Diana und Michael gemeinsam hinter dem Plan gegen Jake stehen. Sorge gleichzeitig dafür, dass deine eigene Beteiligung nicht als bewusste Unterstützung dieses Plans verstanden wird.</p>
+        </div>
+
+        <div class="runde-section" data-reveal>
+          <p class="runde-section-title">Deine Ausgangslage</p>
+          <p>Du weißt inzwischen, dass Jakes Einstellung, seine Therapie und die Affäre mit dir Teil eines größeren Plans waren. Diana und Michael scheinen dabei enger zusammenzuarbeiten, als du bisher zugeben wolltest. Cole wusste offenbar ebenfalls zu viel. Jetzt musst du entscheiden, ob du weiter schweigst oder dich gegen Diana und Michael stellst.</p>
         </div>
 
         <div class="runde-section" data-reveal>
           <p class="runde-section-title">Dein Beweis</p>
-          <p>Du warst die ganze Zeit über nur eine Gefangene im Spiel des Vorstands. Du spieltest mit, weil du musstest. Doch jetzt musst du dich entlasten, um dich zu retten. Lies deinen Beweis zu Beginn der ersten Runde vor und zeige ihn den anderen.</p>
+          <p>Zu Beginn der dritten Runde öffnest du deinen Beweis. Lies ihn allen vor und zeige ihn anschließend in die Runde.</p>
+          <p>Du erklärst, dass du ihn bei deinen Unterlagen gefunden hast, nachdem Cole dich kurz vor seinem Tod zu Jakes Einstellung befragt hatte. Der Beweis soll zeigen, dass hinter Jakes Weg zu Stahlmann & Faust mehr steckt als eine normale Personalentscheidung.</p>
         </div>
 
         <div class="runde-section" data-reveal>
           <p class="runde-section-title">Deine Geheimnisse</p>
-          <p> <b>1. Der Moment der Klarheit:</b>  Dir wird klar, dass Einstellung, Therapie und Affäre ein einziger, von Diana und Michael koordinierter Plan waren, um Jake zu vernichten. Du wurdest benutzt, um den Plan auszuführen. Doch wie hängt Cole in dieser Geschichte
-          </p>
-          <p> <b>2. Der Ausstiegs-Wunsch:</b> Du willst nicht mehr Teil dieses Plans sein. Du hast den Verdacht, dass Diana Coles Tod zumindest billigend in Kauf genommen hat, um den Plan zu schützen. 
-          </p>
+          <p><b>1. Der Moment der Klarheit:</b> Dir wird klar, dass Jakes Einstellung, seine Therapie und die Affäre mit dir Teil eines von Diana und Michael koordinierten Plans waren. Du wurdest benutzt, um diesen Plan auszuführen.</p>
+          <p><b>2. Der Ausstiegswunsch:</b> Du willst nicht länger Teil dieses Plans sein. Du vermutest, dass Diana Coles Tod zumindest billigend in Kauf genommen hat, um ihre Ziele zu schützen.</p>
         </div>
 
         <div class="runde-section" data-reveal>
-          <p class="runde-section-title">Deine Missionen in der dritten Runde</p>
-          <p> <b>1. Belastungsmaterial liefern:</b> Deute an, dass Diana und Michael eine Agenda verfolgen, die weit über das Geschäftliche hinausgeht.</p>
-          <p> <b>2. Zoe die Hand reichen:</b> Entscheide dich, ob du Zoe gegenüber die Wahrheit andeutest, um Jake vor dem Schlimmsten zu bewahren.</p>
+          <p class="runde-section-title">Deine Mission</p>
+          <p><b>1. Diana und Michael belasten:</b> Deute an, dass beide eine gemeinsame Agenda verfolgen, die weit über geschäftliche Interessen hinausgeht. Beobachte genau, wie sie reagieren, wenn Jake, Cole oder der Plan erwähnt werden.</p>
+          <p><b>2. Zoe die Hand reichen:</b> Entscheide, ob du Zoe vorsichtig andeutest, dass Jake gezielt beeinflusst wurde. Hilf ihr nur so weit, dass du dich selbst nicht vollständig belastest.</p>
         </div>
 
         <div class="runde-section" data-reveal>
-          <p class="runde-section-title">Beispielfragen</p>
-          <p><b>1. An Michael:</b> „Diana und du seid euch ja ziemlich einig... Steckt ihr unter einer Decke?“</p>
-          <p><b>2. An Diego:</b> „Du interessiert dich sehr für Jakes Vergangenheit. Warum willst du ihn fallen sehen?“</p>
+          <p class="runde-section-title">Deine Erinnerung an 19.40 Uhr</p>
+          <img class="runde-map" src="../images/map_r3_lf.jpg" alt="Luisa Falkenberg — zum Vergrößern tippen" data-zoomable onerror="this.style.display='none'" />
+          <p class="runde-map-hint">Zum Vergrößern tippen</p>
+          <p> Du stehst auf der Bühne und präsentierst den Panzer. Dann wird es plötzlich dunkel. Du hörst einen kurzen Schrei. Als die Notbeleuchtung angeht, liegt Cole Silverman tot am Boden. Nur Eric und Diego kannst du nirgends sehen.</p>
         </div>
+
+        <div class="runde-section" data-reveal>
+          <p class="runde-section-title">Mögliche Fragen</p>
+          <p><b>An Michael:</b> „Diana und du seid euch heute auffällig einig. Steckt ihr bei dieser Sache unter einer Decke?“</p>
+          <p><b>An Diego:</b> „Du interessierst dich sehr für Jakes Vergangenheit. Warum willst du ihn unbedingt fallen sehen?“</p>
+        </div>
+
 
       </div>
 
       <nav class="page-nav" aria-label="Seitennavigation" data-reveal>
-        <a class="button button-ghost" href="index.html">Zurück zur Startseite</a>
-        <a class="button button-primary" href="index.html"> <b>Zur Rollenübersicht</b></a>
+        <a class="button button-ghost" href="https://www.darkside-games.de">Zu unserer Website</a>
+        <a class="button button-primary" href="https://www.amazon.de/review/create-review/?ie=UTF8&channel=glance-detail&asin=B0H41N1561"><b>Bewerte uns auf Amazon :)</b></a>
       </nav>
 
     </main>
 
-        <footer class="footer">
-      <p><a href="../../impressum/index.html" ><em>@Impressum</em></a></p>
+    <footer class="footer">
+      <p><a href="../../impressum/index.html">@Impressum</a></p>
     </footer>
 
     <script src="script.js"></script>
